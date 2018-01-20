@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink - Конкурс</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img src="http://placehold.it/75x22" alt="">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="competition">
+    <div class="competition__wrapper">
+      <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+
+      <form method="post" action="https://echo.htmlacademy.ru" class="competition__form">
+
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+        </p>
+
+        <fieldset class="competition__form-section">
+          <p>
+            <label class="competition__form-label competition__form-title" for="user-surname">Фамилия:</label>
+            <input class="competition__form-input" id="user-surname" name="user-surname" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+              placeholder="Укажите фамилию*" required>
+          </p>
+
+          <p>
+            <label class="competition__form-label competition__form-title" for="user-name">Имя:</label>
+            <input class="competition__form-input" id="user-name" name="user-name" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$" placeholder="Введите ваше имя*"
+              required>
+          </p>
+
+          <p>
+            <label class="competition__form-label competition__form-title" for="user-patronymic">Отчество:</label>
+            <input class="competition__form-input" id="user-patronymic" name="user-patronymic" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+              placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+
+        <fieldset class="competition__form-section">
+          <p class="competition__form-title">Ваши безбашенныедостижения в путешествии</p>
+          <ul class="competition__list competition__achievement-list">
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement-one" checked>
+                <span class="competition__achievement-check"></span>Сделал селфи с акулой
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement-two" checked>
+                <span class="competition__achievement-check"></span>Обгорел на пляже
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement-three">
+                <span class="competition__achievement-check"></span>Видел Чака Норриса
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement-four">
+                <span class="competition__achievement-check"></span>Накупил сувениров
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement-five" checked>
+                <span class="competition__achievement-check"></span>Удержал башню
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement-six">
+                <span class="competition__achievement-check"></span>Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="competition__form-section">
+          <p>
+            <label class="competition__form-label competition__form-title" for="user-phone">Номер телефона</label>
+            <input class="competition__form-input" type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+          </p>
+
+          <p>
+            <label class="competition__form-label competition__form-title" for="user-mail">Адрес почты:</label>
+            <input class="competition__form-input" id="user-mail" name="user-mail" type="email" placeholder="Введите почту*" required>
+          </p>
+        </fieldset>
+
+        <fieldset class="competition__form-section">
+          <p class="competition__form-title">С каким приложением путешествовали?</p>
+
+          <ul class="competition__list competition__app-list">
+            <li class="competition__app-item">
+              <input class="competition__app-input" type="radio" name="app-item" id="app-one" value="app-one" checked>
+              <label class="competition__app-label" for="app-one">Pink для iOS</label>
+            </li>
+
+            <li class="competition__app-item">
+              <input class="competition__app-input" type="radio" name="app-item" id="app-two" value="app-two">
+              <label class="competition__app-label" for="app-two">Pink на Android</label>
+            </li>
+
+            <li class="competition__app-item">
+              <input class="competition__app-input" type="radio" name="app-item" id="app-three" value="app-three">
+              <label class="competition__app-label" for="app-three">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="competition__form-section">
+          <label class="competition__form-label competition__form-title" for="user-emotions">Опишите свои эмоции</label>
+          <textarea id="user-emotions" width="100%" rows="6" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <input class="competition__form-submit btn" type="submit" value="Отправить форму">
+        <p class="competition__form-remark">*- Обязательные поля</p>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a href="#" class="page-footer__logo logo">
+        <img src="http://placehold.it/160x55" alt="">
+      </a>
+
+      <div class="page-footer__socials">
+        <ul class="page-footer__socials-list">
+          <li class="page-footer__socials-item page-footer__social-item--tw">
+            <a href="https://twitter.com/htmlacademy_ru" title="Pink в Twitter">Pink в Twitter</a>
+          </li>
+          <li class="page-footer__socials-item page-footer__social-item--fb">
+            <a href="https://www.facebook.com/htmlacademy" title="Pink в Facebook">Pink в Facebook</a>
+          </li>
+          <li class="page-footer__socials-item page-footer__social-item--gp">
+            <a href="#" title="Pink в Google Play">Pink в Google Play</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright">
+        <span>Разработано
+          <a href="https://htmlacademy.ru/" target="_blank" class="page-footer__copyright-link">
+            <img src="http://placehold.it/38x41" alt="">
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

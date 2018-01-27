@@ -1,0 +1,18 @@
+.page-title {
+  display: flex;
+  align-items: center;
+  min-height: 238px;
+  text-align: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.page-title__wrapper {
+  @include wrapper;
+}
+
+.page-title h2 {
+  color: $white;
+}

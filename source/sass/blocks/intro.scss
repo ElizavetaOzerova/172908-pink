@@ -1,0 +1,48 @@
+.intro {
+  position: relative;
+  background-color: $background-gray;
+  text-align: center;
+  color: $white;
+}
+
+.intro__header {
+  min-height: 462px;
+  background: url("../img/iphone-hand-mobile@1x.png") 0 175px, url("../img/bg-back-mobile@1x.jpg") 0 0;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+}
+
+.intro__download {
+  padding: 27px 0 32px 0;
+}
+
+.intro__btn {
+  margin-bottom: 30px;
+  border-radius: 60px;
+  border: 3px solid $white;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: rgba($pink, 0.3);
+  }
+}
+
+.intro__icons-wrapper {
+  margin-bottom: 25px;
+}
+
+.intro__icon-link:not(:last-of-type) {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.intro__description {
+  margin-bottom: 0;
+  @include light-font;
+}

@@ -1,0 +1,218 @@
+.competition__wrapper {
+  @include wrapper;
+}
+
+.competition__form {
+  padding-top: 50px;
+}
+
+.competition__form-section {
+  border: 0;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.competition__achievement {
+  background-color: $light-gray;
+}
+
+.competition__app {
+  background-color: $light-gray;
+}
+
+.competition__description {
+  text-align: center;
+}
+
+.competition__form-title {
+  margin-bottom: 40px;
+  line-height: 1.4;
+  text-align: center;
+  color: $pink;
+  text-transform: uppercase;
+
+  &--textarea {
+    margin-bottom: 16px;
+  }
+}
+
+.competition__form-label {
+  padding-left: 20px;
+  text-align: left;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.competition__form-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 62px;
+  margin-top: 10px;
+  padding: 20px;
+  border: 2px solid $border-gray;
+  font-size: 18px;
+  color: $gray;
+  outline: 0;
+
+  &:hover {
+    border: 2px solid $gray;
+  }
+
+  &:active {
+    border: 2px solid $pink;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $gray;
+  }
+  &::-moz-placeholder {
+    color: $gray;
+  }
+  &:-ms-input-placeholder {
+    color: $gray;
+  }
+  &:-moz-placeholder {
+    color: $gray;
+  }
+}
+
+.competition__list {
+  @include reset-list;
+}
+
+.competition__achievement-item {
+  margin-bottom: 40px;
+  margin-right: 35px;
+  font-size: 18px;
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+
+.competition__achievement-input {
+  display: none;
+}
+
+.competition__achievement-label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.competition__achievement-input + .competition__achievement-check {
+  position: absolute;
+  box-sizing: border-box;
+  top: -7px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $border-gray;
+}
+
+.competition__achievement-input:checked + .competition__achievement-check::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 8px;
+  width: 8px;
+  height: 2px;
+  background-color: $pink;
+}
+
+.competition__achievement-input:checked + .competition__achievement-check::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  width: 20px;
+  height: 2px;
+  background-color: $pink;
+}
+
+.competition__achievement-input:checked + .competition__achievement-check::before {
+  transform: rotate(45deg);
+}
+
+.competition__achievement-input:checked + .competition__achievement-check::after {
+  transform: rotate(-45deg);
+}
+
+.competition__app-item {
+  padding-left: 60px;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.competition__app-input {
+  display: none;
+}
+
+.competition__app-label {
+  position: relative;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.competition__app-input + .competition__app-label::before {
+  position: absolute;
+  top: -8px;
+  box-sizing: border-box;
+  content: "";
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $border-gray;
+}
+
+.competition__app-input:checked + .competition__app-label::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -48px;
+  border-radius: 50%;
+  border: 8px solid $pink;
+}
+
+.competition__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px;
+  font-size: 18px;
+  color: $gray;
+  border: 2px solid $border-gray;
+  resize: none;
+}
+
+.competition__form-submit {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: $green;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgba($white, 0.4);
+  }
+}
+
+.competition__form-remark {
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.competition__star {
+  color: $pink;
+}
+

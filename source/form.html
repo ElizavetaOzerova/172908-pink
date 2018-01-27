@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink - Конкурс</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+      </a>
+
+      <button class="main-nav__toggle" type="button">Закрыть меню</button>
+    </div>
+
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list__item main-nav__list__item--active">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__list__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__list__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-title">
+    <div class="page-title__wrapper">
+      <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
+  </section>
+
+  <main class="competition">
+    <div class="competition__wrapper">
+
+      <form method="post" action="https://echo.htmlacademy.ru" class="competition__form">
+
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+
+        <fieldset class="competition__form-section">
+          <p>
+            <label class="competition__form-label" for="user-surname">Фамилия:</label>
+            <input class="competition__form-input" id="user-surname" name="user-surname" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+              placeholder="Укажите фамилию*" required>
+          </p>
+
+          <p>
+            <label class="competition__form-label" for="user-name">Имя:</label>
+            <input class="competition__form-input" id="user-name" name="user-name" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$" placeholder="Введите ваше имя*"
+              required>
+          </p>
+
+          <p>
+            <label class="competition__form-label" for="user-patronymic">Отчество:</label>
+            <input class="competition__form-input" id="user-patronymic" name="user-patronymic" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+              placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+    </div>
+
+
+    <fieldset class="competition__form-section competition__achievement">
+        <div class="competition__wrapper">
+          <p class="competition__form-title">Ваши безбашенныедостижения в путешествии</p>
+          <ul class="competition__list competition__achievement-list">
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="1" checked>
+                <span class="competition__achievement-check"></span>Сделал селфи с акулой
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="2" checked>
+                <span class="competition__achievement-check"></span>Обгорел на пляже
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="3">
+                <span class="competition__achievement-check"></span>Видел Чака Норриса
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="4">
+                <span class="competition__achievement-check"></span>Накупил сувениров
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="5" checked>
+                <span class="competition__achievement-check"></span>Удержал башню
+              </label>
+            </li>
+
+            <li class="competition__achievement-item">
+              <label class="competition__achievement-label">
+                <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="6">
+                <span class="competition__achievement-check"></span>Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </div>
+
+    </fieldset>
+
+    <fieldset class="competition__form-section">
+      <div class="competition__wrapper">
+        <p>
+          <label class="competition__form-label" for="user-phone">Номер телефона</label>
+          <input class="competition__form-input" type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+        </p>
+
+        <p>
+          <label class="competition__form-label" for="user-mail">Адрес почты:</label>
+          <input class="competition__form-input" id="user-mail" name="user-mail" type="email" placeholder="Введите почту*" required>
+        </p>
+      </div>
+
+    </fieldset>
+
+    <fieldset class="competition__form-section competition__app">
+        <div class="competition__wrapper">
+          <p class="competition__form-title">С каким приложением путешествовали?</p>
+
+          <ul class="competition__list competition__app-list">
+            <li class="competition__app-item">
+              <input class="competition__app-input" type="radio" name="app-item" id="app-one" value="app-one" checked>
+              <label class="competition__app-label" for="app-one">Pink для iOS</label>
+            </li>
+
+            <li class="competition__app-item">
+              <input class="competition__app-input" type="radio" name="app-item" id="app-two" value="app-two">
+              <label class="competition__app-label" for="app-two">Pink на Android</label>
+            </li>
+
+            <li class="competition__app-item">
+              <input class="competition__app-input" type="radio" name="app-item" id="app-three" value="app-three">
+              <label class="competition__app-label" for="app-three">Windows Phone</label>
+            </li>
+          </ul>
+      </div>
+
+    </fieldset>
+
+    <div class="competition__wrapper">
+      <fieldset class="competition__form-section">
+        <p class="competition__form-title competition__form-title--textarea">Опишите свои эмоции</p>
+        <textarea class="competition__textarea" id="user-emotions" width="100%" rows="6" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+
+      <input class="competition__form-submit btn" type="submit" value="Отправить форму">
+      <p class="competition__form-remark">
+        <span class="competition__star">* </span> &mdash; Обязательные поля</p>
+    </div>
+
+
+    </form>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a href="#" class="page-footer__logo logo">
+        <img src="img/logo-pink-blue-mobile.svg" alt="">
+      </a>
+
+      <div class="page-footer__socials">
+        <a class="page-footer__socials-link page-footer__socials-link--tw" href="https://twitter.com/htmlacademy_ru" title="Pink в Twitter">Pink в Twitter</a>
+        <a class="page-footer__socials-link page-footer__socials-link--fb" href="https://www.facebook.com/htmlacademy" title="Pink в Facebook">Pink в Facebook</a>
+        <a class="page-footer__socials-link page-footer__socials-link--youtube" href="#" title="Pink на YouTube">Pink на YouTube</a>
+      </div>
+
+      <div class="page-footer__copyright">
+        Разработано
+        <a href="https://htmlacademy.ru/" target="_blank" class="page-footer__copyright-link">
+          <img src="img/htmlacademy.svg" alt="" width="38" height="43">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <h3 class="modal__title">Ваша заявка отправлена</h3>
+    <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+
+    <div class="modal__btn-container">
+      <button class="modal__btn btn" id="modal__btn" type="button">Закрыть окно</button>
+    </div>
+  </div>
+
+  <div class="modal modal--fail" id="modal-fail">
+    <h3 class="modal__title">Что-то пошло не так!</h3>
+    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+    <button class="modal__btn btn" id="modal-fail__btn" type="button">Ok</button>
+  </div>
+
+  <div class="modal-overlay"></div>
+
+</body>
+
+</html>

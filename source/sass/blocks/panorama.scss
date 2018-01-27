@@ -15,6 +15,7 @@
   background-color: $pink;
   text-transform: uppercase;
   color: $white;
+
   @include bold-font;
   font-size: 12px;
 }

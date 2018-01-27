@@ -1,6 +1,7 @@
 .price {
   text-align: center;
   background-color: $light-gray;
+
   @include bg-triangle;
   padding-bottom: 45px;
 }
@@ -24,8 +25,10 @@
   background-color: $gray;
   color: $white;
   font-size: 18px;
+
   &--hit {
     position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -37,6 +40,7 @@
       background-image: url("../img/bg-hit.svg");
       background-repeat: no-repeat;
     }
+
     &::after {
       position: absolute;
       content: "ХИТ";
@@ -55,6 +59,7 @@
 
 .price__package-value {
   margin-bottom: 0;
+
   @include light-font;
   font-size: 24px;
 }
@@ -63,12 +68,14 @@
   position: relative;
   padding: 20px;
   text-align: left;
+
   &::after {
     position: absolute;
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   &--yes::after {
     width: 31px;
     height: 21px;
@@ -76,6 +83,7 @@
     right: 15px;
     background-image: url("../img/icon-yes.svg");
   }
+
   &--no::after {
     width: 27px;
     height: 26px;

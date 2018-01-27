@@ -65,12 +65,15 @@
   &::-webkit-input-placeholder {
     color: $gray;
   }
+
   &::-moz-placeholder {
     color: $gray;
   }
+
   &:-ms-input-placeholder {
     color: $gray;
   }
+
   &:-moz-placeholder {
     color: $gray;
   }
@@ -118,6 +121,7 @@
   width: 8px;
   height: 2px;
   background-color: $pink;
+  transform: rotate(45deg);
 }
 
 .competition__achievement-input:checked + .competition__achievement-check::after {
@@ -128,13 +132,6 @@
   width: 20px;
   height: 2px;
   background-color: $pink;
-}
-
-.competition__achievement-input:checked + .competition__achievement-check::before {
-  transform: rotate(45deg);
-}
-
-.competition__achievement-input:checked + .competition__achievement-check::after {
   transform: rotate(-45deg);
 }
 

@@ -20,5 +20,8 @@ $font-family--bold: "Open Sans Bold", "Helvetica", "Arial", sans-serif;
 $font-family--light: "Open Sans Light", "Helvetica", "Arial", sans-serif;
 
 // Breakpoints
-$tablet-width: (min-width: 768px);
-$desktop-width: (min-width: 1150px);
+$tablet-width: "(min-width: 660px)";
+$desktop-width: "(min-width: 1200px)";
+
+// Retina
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

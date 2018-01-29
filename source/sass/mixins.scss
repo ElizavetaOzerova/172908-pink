@@ -2,14 +2,14 @@
   width: 87.5%;
   margin: 0 auto;
 
-  // @media $tablet-width {
-  //   width: 86%;
-  // }
+  @media #{$tablet-width} {
+    width: 93.9393939394%;
+  }
 
-  // @media $desktop-width {
-  //   width: 91%;
-  //   max-width: 1050px;
-  // }
+  @media #{$desktop-width} {
+    width: 78.3333333333%;
+    max-width: 940px;
+  }
 }
 
 @mixin drop-list {

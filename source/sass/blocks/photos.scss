@@ -10,6 +10,22 @@
 .photos__description {
   padding: 40px 0;
   line-height: 2;
+
+  @media #{$tablet-width} {
+    font-size: 18px;
+  }
+}
+
+.photos__section-container {
+  display: block;
+
+  @media #{$tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .photos__section {

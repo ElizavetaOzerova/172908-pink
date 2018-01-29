@@ -1,0 +1,21 @@
+.panorama {
+  text-align: center;
+}
+
+.panorama__img-container {
+  position: relative;
+}
+
+.panorama__flag {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: $pink;
+  text-transform: uppercase;
+  color: $white;
+
+  @include bold-font;
+  font-size: 12px;
+}

@@ -1,0 +1,143 @@
+.photos {
+  text-align: center;
+  background-color: $white;
+}
+
+.photos__wrapper {
+  @include wrapper;
+}
+
+.photos__description {
+  padding: 40px 0;
+  line-height: 2;
+}
+
+.photos__section {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: $light-gray;
+}
+
+.photos__comment {
+  padding: 15px;
+}
+
+.photos__comment-author {
+  @include bold-font;
+}
+
+.photos__comment-like {
+  position: relative;
+  padding-left: 30px;
+  color: $pink;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.photos__time {
+  @include light-font;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.photos__comment-text {
+  margin-top: 6px;
+}
+
+.photos__post {
+  padding-top: 20px;
+  background-color: $light-gray;
+}
+
+.photos__post-img {
+  margin-bottom: 40px;
+}
+
+.photos__editing-btn {
+  width: 53px;
+  height: 53px;
+  margin-right: 25px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+  }
+
+  &--saturation {
+    background-image: url("../img/icon-editor-fill.svg");
+    opacity: 0.3;
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast.svg");
+    opacity: 0.3;
+  }
+}
+
+.photos__btn-container {
+  padding: 40px 0;
+  border-top: 1px solid $border-gray;
+}
+
+.photos__btn {
+  margin-bottom: 10px;
+  border-radius: 60px;
+  background-color: transparent;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--post {
+    color: $pink;
+    border: 3px solid $pink;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $pink;
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--cancel {
+    color: rgba($gray, 0.3);
+    border: 3px solid rgba($gray, 0.3);
+
+    &:hover {
+      color: rgba($gray, 0.6);
+      border: 3px solid rgba($gray, 0.6);
+    }
+
+    &:active {
+      border-color: transparent;
+      background-color: rgba($gray, 0.6);
+      color: rgba($white, 0.6);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@mixin wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+
+  // @media $tablet-width {
+  //   width: 86%;
+  // }
+
+  // @media $desktop-width {
+  //   width: 91%;
+  //   max-width: 1050px;
+  // }
+}
+
+@mixin drop-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin light-font {
+  font-family: $font-family--light;
+  font-weight: lighter;
+}
+
+@mixin bold-font {
+  font-family: $font-family--bold;
+  font-weight: bolder;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin bg-triangle {
+  padding-top: 80px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+}

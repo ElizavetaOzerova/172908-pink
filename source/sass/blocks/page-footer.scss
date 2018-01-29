@@ -1,0 +1,60 @@
+.page-footer {
+  background-color: $white;
+  text-align: center;
+}
+
+.page-footer__wrapper {
+  @include wrapper;
+  padding: 40px 0;
+}
+
+.page-footer__title {
+  margin-bottom: 32px;
+}
+
+.page-footer__logo {
+  @include center-block;
+  margin-bottom: 35px;
+}
+
+.page-footer__socials {
+  margin-bottom: 33px;
+}
+
+.page-footer__socials-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  vertical-align: middle;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid $border-gray;
+
+  &--tw {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
+
+  &:hover {
+    border: 3px solid $gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-link img {
+  margin-left: 5px;
+  vertical-align: middle;
+}

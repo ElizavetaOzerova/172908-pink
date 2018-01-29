@@ -1,0 +1,10 @@
+.page-header {
+  background-color: $gray;
+}
+
+.page-header__wrapper {
+  @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}

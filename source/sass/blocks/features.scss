@@ -1,0 +1,36 @@
+.features {
+  text-align: center;
+  background-color: $light-gray;
+}
+
+.features__wrapper {
+  @include wrapper;
+  padding-bottom: 40px;
+}
+
+.features__title-container {
+  background-color: $white;
+}
+
+.features__title {
+  margin-bottom: 25px;
+}
+
+.features__container {
+  @include bg-triangle;
+}
+
+.features__list {
+  @include reset-list;
+  overflow: hidden;
+}
+
+.features__item-name {
+  margin-bottom: 15px;
+  color: $black;
+}
+
+.features__description {
+  margin-bottom: 33px;
+  line-height: 1.8;
+}

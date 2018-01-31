@@ -1,15 +1,62 @@
 .intro {
   position: relative;
   background-color: $background-gray;
-  text-align: center;
   color: $white;
+
+  @media #{$tablet-width} {
+    min-height: 730px;
+    background: url("../img/iphone-hand-mobile@1x.png") 90% 100%, url("../img/bg-back-mobile@1x.jpg") 0 0;
+    background-color: $background-gray;
+    background-repeat: no-repeat;
+    background-size: 480px, cover;
+  }
+
+  @media #{$desktop-width} {
+    min-height: 853px;
+    background: url("../img/iphone-hand-mobile@1x.png") 75% 100%, url("../img/bg-back-mobile@1x.jpg") 0 0;
+    background-color: $background-gray;
+    background-repeat: no-repeat;
+    background-size: 615px, cover;
+  }
+}
+
+.intro__wrapper {
+  @include wrapper;
 }
 
 .intro__header {
   min-height: 462px;
-  background: url("../img/iphone-hand-mobile@1x.png") 0 175px, url("../img/bg-back-mobile@1x.jpg") 0 0;
+  background: url("../img/iphone-hand-mobile@1x.png") 0 180px, url("../img/bg-back-mobile@1x.jpg") 0 0;
+  background-color: $background-gray;
   background-repeat: no-repeat;
   background-size: auto, cover;
+
+  @media #{$tablet-width} {
+    display: none;
+  }
+}
+
+.intro__text {
+  text-align: center;
+
+  @media #{$tablet-width} {
+    width: 300px;
+    margin-top: 200px;
+  }
+}
+
+.intro__title {
+  display: none;
+  margin-bottom: 33px;
+  color: $white;
+
+  @media #{$tablet-width} {
+    display: block;
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 53px;
+  }
 }
 
 .intro__download {
@@ -31,10 +78,27 @@
     background-color: $white;
     color: rgba($pink, 0.3);
   }
+
+  @media #{$tablet-width} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 55px;
+    font-size: 21px;
+  }
 }
 
 .intro__icons-wrapper {
   margin-bottom: 25px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 45px;
+  }
 }
 
 .intro__icon-link:not(:last-of-type) {
@@ -44,6 +108,11 @@
 
 .intro__description {
   margin-bottom: 0;
+  line-height: 1.6;
 
   @include light-font;
+
+  @media #{$tablet-width} {
+    font-size: 18px;
+  }
 }

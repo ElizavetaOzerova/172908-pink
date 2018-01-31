@@ -1,9 +1,17 @@
-.panorama {
-  text-align: center;
-}
-
 .panorama__img-container {
   position: relative;
+  width: 100%;
+  display: block;
+  line-height: 0;
+  text-align: left;
+}
+
+.panorama__img {
+  width: 100%;
+
+  @media #{$tablet-width} {
+    max-height: 510px;
+  }
 }
 
 .panorama__flag {
@@ -13,9 +21,51 @@
   padding: 10px 20px;
   text-align: center;
   background-color: $pink;
-  text-transform: uppercase;
-  color: $white;
+  line-height: 1.4;
 
   @include bold-font;
   font-size: 12px;
+  text-transform: uppercase;
+  color: $white;
+
+  @media #{$tablet-width} {
+    top: 55px;
+  }
+
+  @media #{$desktop-width} {
+    right: 130px;
+  }
+}
+
+.panorama__comment {
+  margin-bottom: 20px;
+  background-color: $light-gray;
+
+  @media #{$tablet-width} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+}
+
+.panorama__comment-author {
+  @media #{$tablet-width} {
+    order: 1;
+  }
+}
+
+.panorama__comment-text {
+  @media #{$tablet-width} {
+    order: 3;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+}
+
+.panorama__comment-like {
+  @media #{$tablet-width} {
+    width: 130px;
+    order: 2;
+  }
 }

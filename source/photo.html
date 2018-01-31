@@ -8,175 +8,204 @@
   <title>Pink - Фото</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
+        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
+        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
       </a>
-
-      <button class="main-nav__toggle" type="button">Закрыть меню</button>
     </div>
 
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list__item main-nav__list__item--active">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__list__item">
-            <a class="main-nav__link" href="#">Фотографии</a>
-          </li>
-          <li class="main-nav__list__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__list__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="main-menu main-menu--closed">
+      <button class="main-menu__toggle" type="button"></button>
+
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a>Фотографии</a>
+        </li>
+        <li class="main-menu__item  main-menu__item--active">
+          <a href="competition.html">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <section class="page-title">
     <div class="page-title__wrapper">
-      <h2>Фотографии пользователей</h2>
+      <h2>Фотографии
+        <br>пользователей</h2>
     </div>
   </section>
 
   <main class="photos">
     <div class="photos__wrapper">
-      <p class="photos__description">Взгляните на фотографии, которые выкладывают пользователи!
-        <br>Видите, как&nbsp;не хватает ваших?</p>
+      <p class="photos__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как&nbsp;не хватает ваших?</p>
     </div>
 
     <div class="photos__panorama panorama">
       <div class="panorama__img-container">
         <img class="panorama__img" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
-        <div class="panorama__flag">Панорама дня</div>
+        <span class="panorama__flag">Панорама дня</span>
       </div>
 
       <div class="photos__wrapper">
-        <div class="photos__comment">
-          <b class="photos__comment-author">Анна</b>
-          <span class="photos__time">(5 минут назад)</span>
-          <p class="photos__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="photos__comment-like">Нравится: 215</p>
+        <div class="photos__comment panorama__comment">
+          <b class="photos__comment-author panorama__comment-author">Анна
+            <span class="photos__time panorama__time">(5 минут назад)</span>
+          </b>
+          <p class="photos__comment-text panorama__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="photos__comment-like panorama__comment-like">Нравится: 215</p>
         </div>
       </div>
     </div>
 
     <div class="photos__wrapper">
       <div class="photos__section-container">
-          <div class="photos__section">
-              <div class="photos__img">
-                <img src="img/photo-car-mobile@1x.jpg" alt="photo">
-              </div>
+        <div class="photos__section">
+          <div class="photos__img">
+            <img src="img/photo-car-mobile@1x.jpg" alt="photo">
+          </div>
 
-              <div class="photos__comment">
-                <b class="photos__comment-author">Левон</b>
-                <span class="photos__time">(5 часов назад)</span>
-                <p class="photos__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="photos__comment-like">Нравится: 356</p>
-              </div>
+          <div class="photos__comment">
+            <div class="photos__comment-main">
+              <b class="photos__comment-author">Левон</b>
+              <span class="photos__time">(5 часов назад)</span>
+              <p class="photos__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             </div>
 
-            <div class="photos__section">
-              <div class="photos__img">
-                <img src="img/photo-drumset-mobile@1x.jpg" alt="photo">
-              </div>
-
-              <div class="photos__comment">
-                <b class="photos__comment-author">Антон</b>
-                <span class="photos__time">(12 часов назад)</span>
-                <p class="photos__comment-text">Соседи будут радиы!</p>
-                <p class="photos__comment-like">Нравится: 666</p>
-              </div>
-            </div>
-
-            <div class="photos__section">
-              <div class="photos__img">
-                <img src="img/photo-window-mobile@1x.jpg" alt="photo">
-              </div>
-
-              <div class="photos__comment">
-                <b class="photos__comment-author">Борис</b>
-                <span class="photos__time">(20 часов назад)</span>
-                <p class="photos__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="photos__comment-like">Нравится: 215</p>
-              </div>
-            </div>
-
-            <div class="photos__section">
-              <div class="photos__img">
-                <img src="img/photo-fair-mobile@1x.jpg" alt="photo">
-              </div>
-
-              <div class="photos__comment">
-                <b class="photos__comment-author">Сергей</b>
-                <span class="photos__time">(25 часов назад)</span>
-                <p class="photos__comment-text">Самая кубанская в мире!</p>
-                <p class="photos__comment-like">Нравится: 4</p>
-              </div>
-            </div>
-
-            <div class="photos__section">
-              <div class="photos__img">
-                <img src="img/photo-pov-mobile@1x.jpg" alt="photo">
-              </div>
-
-              <div class="photos__comment">
-                <b class="photos__comment-author">Максим</b>
-                <span class="photos__time">(40 часов назад)</span>
-                <p class="photos__comment-text">Где снег-то?</p>
-                <p class="photos__comment-like">Нравится: 150</p>
-              </div>
-            </div>
-
-            <div class="photos__section">
-              <div class="photos__img">
-                <img src="img/photo-wing-mobile@1x.jpg" alt="photo">
-              </div>
-
-              <div class="photos__comment">
-                <b class="photos__comment-author">Надежда</b>
-                <span class="photos__time">(45 часов назад)</span>
-                <p class="photos__comment-text">Всем GM и взаимные лайки!</p>
-                <p class="photos__comment-like">Нравится: 2560</p>
-              </div>
-            </div>
-      </div>
-
-      <p class="photos__description">Затмите их всех!
-        <br>Выкладывайте все, что накопилось в телефоне!</p>
-
-    </div>
-
-    <div class="photos__post">
-      <div class="photos__wrapper">
-        <div class="photos__post-img">
-          <img src="img/photo-road-mobile@1x.jpg" alt="photo">
+            <p class="photos__comment-like">Нравится: 356</p>
+          </div>
         </div>
 
-        <div class="photos__post-editing">
-          <button type="button" class="photos__editing-btn photos__editing-btn--crop"></button>
-          <button type="button" class="photos__editing-btn photos__editing-btn--saturation"></button>
-          <button type="button" class="photos__editing-btn photos__editing-btn--contrast"></button>
+        <div class="photos__section">
+          <div class="photos__img">
+            <img src="img/photo-drumset-mobile@1x.jpg" alt="photo">
+          </div>
 
-          <div class="controls controls--size">
-            <div class="controls__scale">
-              <div class="controls__bar"></div>
-              <div class="controls__toggle"></div>
+          <div class="photos__comment">
+            <div class="photos__comment-main">
+              <b class="photos__comment-author">Антон</b>
+              <span class="photos__time">(12 часов назад)</span>
+              <p class="photos__comment-text">Соседи будут рады!</p>
             </div>
+
+            <p class="photos__comment-like">Нравится: 666</p>
+          </div>
+        </div>
+
+        <div class="photos__section">
+          <div class="photos__img">
+            <img src="img/photo-window-mobile@1x.jpg" alt="photo">
+          </div>
+
+          <div class="photos__comment">
+            <div class="photos__comment-main">
+              <b class="photos__comment-author">Борис</b>
+              <span class="photos__time">(20 часов назад)</span>
+              <p class="photos__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
+
+            <p class="photos__comment-like">Нравится: 215</p>
+          </div>
+        </div>
+
+        <div class="photos__section">
+          <div class="photos__img">
+            <img src="img/photo-fair-mobile@1x.jpg" alt="photo">
+          </div>
+
+          <div class="photos__comment">
+            <div class="photos__comment-main">
+              <b class="photos__comment-author">Сергей</b>
+              <span class="photos__time">(25 часов назад)</span>
+              <p class="photos__comment-text">Самая кубанская в мире!</p>
+            </div>
+
+            <p class="photos__comment-like">Нравится: 4</p>
+          </div>
+        </div>
+
+        <div class="photos__section">
+          <div class="photos__img">
+            <img src="img/photo-pov-mobile@1x.jpg" alt="photo">
+          </div>
+
+          <div class="photos__comment">
+            <div class="photos__comment-main">
+              <b class="photos__comment-author">Максим</b>
+              <span class="photos__time">(40 часов назад)</span>
+              <p class="photos__comment-text">Где снег-то?</p>
+            </div>
+
+            <p class="photos__comment-like">Нравится: 150</p>
+          </div>
+        </div>
+
+        <div class="photos__section">
+          <div class="photos__img">
+            <img src="img/photo-wing-mobile@1x.jpg" alt="photo">
+          </div>
+
+          <div class="photos__comment">
+            <div class="photos__comment-main">
+              <b class="photos__comment-author">Надежда</b>
+              <span class="photos__time">(45 часов назад)</span>
+              <p class="photos__comment-text">Всем GM и взаимные лайки!</p>
+            </div>
+
+            <p class="photos__comment-like">Нравится: 2560</p>
           </div>
         </div>
       </div>
 
-      <div class="photos__btn-container">
-        <button class="photos__btn photos__btn--post btn">Запостить</button>
-        <button class="photos__btn photos__btn--cancel btn">Отмена</button>
+      <p class="photos__description photos__description--bottom">Затмите их всех!
+        <br>Выкладывайте все, что накопилось в телефоне!</p>
+
+    </div>
+
+    <div class="post">
+      <div class="post__wrapper">
+        <div class="post__img">
+          <img src="img/photo-road-mobile@1x.jpg" alt="photo">
+        </div>
+
+        <div class="post__editing">
+          <button type="button" class="post__editing-btn post__editing-btn--crop"></button>
+          <button type="button" class="post__editing-btn post__editing-btn--saturation"></button>
+          <button type="button" class="post__editing-btn post__editing-btn--contrast"></button>
+        </div>
+
+        <div class="post__controls">
+          <div class="post__controls-wrap  post__controls-wrap-1">
+            <input class="range-filter" type="range" id="range-filter-1" name="range-filter">
+          </div>
+
+          <div class="post__controls-wrap  post__controls-wrap-2">
+            <input class="range-filter" type="range" id="range-filter-2" name="range-filter">
+          </div>
+
+          <div class="post__controls-wrap  post__controls-wrap-3">
+            <input class="range-filter" type="range" id="range-filter-3" name="range-filter">
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="post__btn-container">
+        <button class="post__btn post__btn--post btn">Запостить</button>
+        <button class="post__btn post__btn--cancel btn">Отмена</button>
       </div>
 
     </div>
@@ -190,9 +219,12 @@
       </a>
 
       <div class="page-footer__socials">
-        <a class="page-footer__socials-link page-footer__socials-link--tw" target="_blank" href="https://twitter.com/htmlacademy_ru" title="Pink в Twitter">Pink в Twitter</a>
-        <a class="page-footer__socials-link page-footer__socials-link--fb" target="_blank" href="https://www.facebook.com/htmlacademy" title="Pink в Facebook">Pink в Facebook</a>
-        <a class="page-footer__socials-link page-footer__socials-link--youtube" target="_blank" href="https://youtu.be/5gGJ5Qcc-MU" title="Pink на YouTube">Pink на YouTube</a>
+        <a class="page-footer__socials-link page-footer__socials-link--tw" target="_blank" href="https://twitter.com/htmlacademy_ru"
+          title="Pink в Twitter">Pink в Twitter</a>
+        <a class="page-footer__socials-link page-footer__socials-link--fb" target="_blank" href="https://www.facebook.com/htmlacademy"
+          title="Pink в Facebook">Pink в Facebook</a>
+        <a class="page-footer__socials-link page-footer__socials-link--youtube" target="_blank" href="https://youtu.be/5gGJ5Qcc-MU"
+          title="Pink на YouTube">Pink на YouTube</a>
       </div>
 
       <div class="page-footer__copyright">

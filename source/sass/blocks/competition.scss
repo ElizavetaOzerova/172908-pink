@@ -1,15 +1,40 @@
+.competition__form {
+  display: block;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--name {
+      order: 1;
+    }
+
+    &--achievement {
+      order: 4;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--app {
+      order: 2;
+    }
+
+    &--emotions {
+      order: 5;
+    }
+  }
+}
+
 .competition__wrapper {
   @include wrapper;
 }
 
-.competition__form {
-  padding-top: 50px;
-}
-
 .competition__form-section {
-  border: 0;
-  margin: 0;
-  padding: 40px 0;
+  margin: 0 0 35px 0;
+  padding-bottom: 40px;
 }
 
 .competition__achievement {
@@ -21,11 +46,19 @@
 }
 
 .competition__description {
+  margin: 0;
+  padding: 45px 0;
   text-align: center;
+
+  @media #{$tablet-width} {
+    padding: 95px 60px 80px 60px;
+    font-size: 18px;
+  }
 }
 
 .competition__form-title {
-  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   line-height: 1.4;
   text-align: center;
   color: $pink;
@@ -33,6 +66,51 @@
 
   &--textarea {
     margin-bottom: 16px;
+  }
+}
+
+.competition__name-section p {
+  display: block;
+
+  @media #{$tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.competition__contacts-section {
+  display: block;
+
+  @media #{$desktop-width} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.competition__contacts-section p {
+  display: block;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media #{$desktop-width} {
+    width: 410px;
+  }
+}
+
+.competition__name-section label {
+  @media #{$tablet-width} {
+    padding-left: 0;
+    padding-right: 17px;
   }
 }
 
@@ -53,6 +131,24 @@
   font-size: 18px;
   color: $gray;
   outline: 0;
+
+  &--phone {
+    @media #{$tablet-width} {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  &--email {
+    @media #{$tablet-width} {
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    @media #{$desktop-width} {
+      margin-top: 0;
+    }
+  }
 
   &:hover {
     border: 2px solid $gray;
@@ -83,6 +179,17 @@
   @include reset-list;
 }
 
+.competition__achievement-list {
+  display: block;
+
+  @media #{$desktop-width} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
 .competition__achievement-item {
   margin-bottom: 40px;
   margin-right: 35px;
@@ -90,6 +197,35 @@
 
   &:last-of-type {
     margin-bottom: 15px;
+  }
+
+  @media #{$desktop-width} {
+    width: 265px;
+    margin-right: 0;
+
+    &--shark {
+      order: 1;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--chuck {
+      order: 2;
+    }
+
+    &--gift {
+      order: 5;
+    }
+
+    &--tower {
+      order: 3;
+    }
+
+    &--hotel {
+      order: 6;
+    }
   }
 }
 

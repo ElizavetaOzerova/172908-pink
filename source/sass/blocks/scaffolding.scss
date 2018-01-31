@@ -23,6 +23,17 @@ p {
   line-height: 1.8;
 }
 
+h1 {
+  margin: 0;
+
+  @include light-font;
+  font-size: 40px;
+
+  @media #{$desktop-width} {
+    font-size: 50px;
+  }
+}
+
 h2 {
   margin: 0;
 
@@ -55,4 +66,12 @@ a {
 button {
   cursor: pointer;
   outline: none;
+}
+
+fieldset {
+  border: 0;
+
+  @media #{$tablet-width} {
+    border: 2px solid $border-gray;
+  }
 }

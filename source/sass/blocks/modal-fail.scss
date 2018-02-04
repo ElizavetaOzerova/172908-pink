@@ -1,15 +1,21 @@
 .modal-fail {
-  // display: none;
+  display: none;
   position: fixed;
   top: 120px;
   left: 50%;
   width: 320px;
   margin-left: -160px;
+  padding-bottom: 50px;
   text-align: center;
   background-color: $white;
   box-shadow: 0 7px 15px 3px rgba($black, 0.1);
 
-  .modal--show {
+  &--show {
     display: block;
+  }
+
+  @media #{$tablet-width} {
+    width: 462px;
+    margin-left: -231px;
   }
 }

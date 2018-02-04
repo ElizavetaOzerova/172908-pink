@@ -23,6 +23,12 @@
   background-color: $white;
 }
 
+.features__title {
+  @media #{$tablet-width} {
+    font-size: 40px;
+  }
+}
+
 .features__title:not(:last-child) {
   margin-bottom: 25px;
 

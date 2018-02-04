@@ -7,27 +7,31 @@
 }
 
 .photos__description {
-  margin: 45px 10px;
-  padding: 0;
-  line-height: 2;
+  padding: 45px 14px;
+  margin: 0;
+  line-height: 2.2;
   text-align: center;
 
+  &--bottom {
+    padding: 27px 12px 45px 12px;
+  }
+
   @media #{$tablet-width} {
-    margin: 90px 85px;
+    padding: 90px 85px;
     font-size: 18px;
-    line-height: 1.9;
+    line-height: 1.8;
 
     &--bottom {
-      margin: 20px 85px 70px 85px;
+      padding: 50px 85px 70px 85px;
     }
   }
 
   @media #{$desktop-width} {
-    margin: 90px 180px;
-    line-height: 1.8;
+    padding: 90px 180px;
+    line-height: 1.7;
 
     &--bottom {
-      margin: 20px 180px 60px 180px;
+      padding: 20px 180px 70px 180px;
     }
   }
 }
@@ -58,7 +62,7 @@
     margin-right: 0;
   }
 
-  @media #{$tablet-width} {
+  @media #{$desktop-width} {
     margin-bottom: 55px;
   }
 }
@@ -120,5 +124,5 @@
 }
 
 .photos__comment-text {
-  margin-top: 6px;
+  margin-top: 2px;
 }

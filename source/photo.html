@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Pink - Фото</title>
+
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
-        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
-        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
+        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg" alt="PINK">
+        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg" alt="PINK">
+        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg" alt="PINK">
       </a>
     </div>
 
@@ -28,11 +30,11 @@
         <li class="main-menu__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="main-menu__item">
+        <li class="main-menu__item main-menu__item--active">
           <a>Фотографии</a>
         </li>
-        <li class="main-menu__item  main-menu__item--active">
-          <a href="competition.html">Конкурс</a>
+        <li class="main-menu__item">
+          <a href="form.html">Конкурс</a>
         </li>
         <li class="main-menu__item">
           <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
@@ -55,7 +57,7 @@
 
     <div class="photos__panorama panorama">
       <div class="panorama__img-container">
-        <img class="panorama__img" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+        <img class="panorama__img" src="img/panorama-mobile@1x.jpg" alt="Фото">
         <span class="panorama__flag">Панорама дня</span>
       </div>
 
@@ -174,48 +176,56 @@
 
     </div>
 
-    <div class="post">
+    <form class="post" action="https://echo.htmlacademy.ru" method="post">
       <div class="post__wrapper">
-        <div class="post__img">
-          <img src="img/photo-road-mobile@1x.jpg" alt="photo">
+        <fieldset class="post__image-select">
+          <img src="img/photo-road-mobile@1x.jpg" alt="Фото">
+        </fieldset>
+
+        <div class="post__filter-controls">
+          <input type="radio" id="upload-filter-1" name="upload-filter" checked>
+          <label class="post__filter-toggle" for="upload-filter-1"></label>
+
+          <input type="radio" id="upload-filter-2" name="upload-filter">
+          <label class="post__filter-toggle" for="upload-filter-2"></label>
+
+          <input type="radio" id="upload-filter-3" name="upload-filter">
+          <label class="post__filter-toggle" for="upload-filter-3"></label>
         </div>
 
-        <div class="post__editing">
-          <button type="button" class="post__editing-btn post__editing-btn--crop"></button>
-          <button type="button" class="post__editing-btn post__editing-btn--saturation"></button>
-          <button type="button" class="post__editing-btn post__editing-btn--contrast"></button>
+        <div class="range-controls">
+          <div class="range-controls__wrapper  range-controls__wrapper-1">
+            <div class="range-filter range-filter--1" id="range-filter-1">
+              <span class="range-filter__switch range-filter__switch--1"></span>
+            </div>
+          </div>
+
+          <div class="range-controls__wrapper  range-controls__wrapper-2">
+            <div class="range-filter range-filter--2" id="range-filter-2">
+              <span class="range-filter__switch range-filter__switch--2"></span>
+            </div>
+          </div>
+
+          <div class="range-controls__wrapper  range-controls__wrapper-3">
+            <div class="range-filter range-filter--3" id="range-filter-3">
+              <span class="range-filter__switch range-filter__switch--3"></span>
+            </div>
+          </div>
         </div>
 
-        <div class="post__controls">
-          <div class="post__controls-wrap  post__controls-wrap-1">
-            <input class="range-filter" type="range" id="range-filter-1" name="range-filter">
-          </div>
-
-          <div class="post__controls-wrap  post__controls-wrap-2">
-            <input class="range-filter" type="range" id="range-filter-2" name="range-filter">
-          </div>
-
-          <div class="post__controls-wrap  post__controls-wrap-3">
-            <input class="range-filter" type="range" id="range-filter-3" name="range-filter">
-          </div>
+        <div class="post__button-wrapper">
+          <input class="post__btn post__btn--submit btn" id="submit-btn" type="submit" value="Запостить">
+          <input class="post__btn post__btn--reset btn" id="reset-btn" type="reset" value="Отмена">
         </div>
-
-
       </div>
-
-      <div class="post__btn-container">
-        <button class="post__btn post__btn--post btn">Запостить</button>
-        <button class="post__btn post__btn--cancel btn">Отмена</button>
-      </div>
-
-    </div>
+    </form>
 
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a href="#" class="page-footer__logo logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="">
+      <a href="index.html" class="page-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg" alt="PINK">
       </a>
 
       <div class="page-footer__socials">
@@ -230,11 +240,13 @@
       <div class="page-footer__copyright">
         Разработано
         <a href="https://htmlacademy.ru/" target="_blank" title="HTML Academy" class="page-footer__copyright-link">
-          <img src="img/htmlacademy.svg" alt="" width="38" height="43">
+          <img src="img/htmlacademy.svg" alt="HTML Academy" width="38" height="43">
         </a>
       </div>
     </div>
   </footer>
+
+  <script src="js/main-menu.js"></script>
 
 </body>
 

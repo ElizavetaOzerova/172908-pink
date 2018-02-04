@@ -28,6 +28,11 @@
   font-weight: lighter;
 }
 
+@mixin regular-font {
+  font-family: $font-family--base;
+  font-weight: normal;
+}
+
 @mixin bold-font {
   font-family: $font-family--bold;
   font-weight: bolder;

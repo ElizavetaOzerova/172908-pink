@@ -10,7 +10,7 @@
   width: 100%;
 
   @media #{$tablet-width} {
-    max-height: 510px;
+    min-height: 508px;
   }
 }
 
@@ -56,6 +56,8 @@
 }
 
 .panorama__comment-text {
+  margin-top: 0;
+
   @media #{$tablet-width} {
     order: 3;
     flex-grow: 1;

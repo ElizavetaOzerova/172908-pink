@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Pink - Конкурс</title>
+
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
-        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
-        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
+        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg" alt="PINK">
+        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg" alt="PINK">
+        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg" alt="PINK">
       </a>
     </div>
 
@@ -41,45 +43,50 @@
     </nav>
   </header>
 
-  <section class="page-title">
+  <section class="page-title page-title--form">
     <div class="page-title__wrapper">
       <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
   </section>
 
   <main class="competition">
+
+    <div class="competition__wrapper">
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+    </div>
+
+
     <form method="post" action="https://echo.htmlacademy.ru" class="competition__form">
 
-      <div class="competition__wrapper competition__form--name">
+      <section class="competition__section competition__user-name">
+        <div class="competition__wrapper competition__wrapper--user-name">
+          <div class="competition__name-section">
+            <p>
+              <label class="competition__form-label" for="user-surname">Фамилия:</label>
+              <input class="competition__form-input" id="user-surname" name="user-surname" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+                placeholder="Укажите фамилию *" required>
+            </p>
 
-        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <p>
+              <label class="competition__form-label" for="user-name">Имя:</label>
+              <input class="competition__form-input" id="user-name" name="user-name" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$" placeholder="Введите ваше имя *"
+                required>
+            </p>
 
-        <div class="competition__form-section competition__name-section">
-          <p>
-            <label class="competition__form-label" for="user-surname">Фамилия:</label>
-            <input class="competition__form-input" id="user-surname" name="user-surname" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
-              placeholder="Укажите фамилию*" required>
-          </p>
-
-          <p>
-            <label class="competition__form-label" for="user-name">Имя:</label>
-            <input class="competition__form-input" id="user-name" name="user-name" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$" placeholder="Введите ваше имя*"
-              required>
-          </p>
-
-          <p>
-            <label class="competition__form-label" for="user-patronymic">Отчество:</label>
-            <input class="competition__form-input" id="user-patronymic" name="user-patronymic" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
-              placeholder="Ну и отчество тоже">
-          </p>
+            <p>
+              <label class="competition__form-label" for="user-patronymic">Отчество:</label>
+              <input class="competition__form-input" id="user-patronymic" name="user-patronymic" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+                placeholder="Ну и отчество тоже">
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
 
-      <div class="competition__form-section competition__achievement competition__form--achievement">
+      <section class="competition__section competition__achievement">
         <div class="competition__wrapper">
-          <fieldset class="competition-fieldset">
-            <p class="competition__form-title">Ваши безбашенные достижения в путешествии</p>
+          <fieldset class="competition__fieldset competition__fieldset--achievement">
+            <legend class="competition__form-title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="competition__list competition__achievement-list">
               <li class="competition__achievement-item competition__achievement-item--shark">
                 <label class="competition__achievement-label">
@@ -126,35 +133,38 @@
           </fieldset>
 
         </div>
+      </section>
 
-      </div>
 
-      <div class="competition__form-section competition__form--contacts">
+      <section class="competition__section competition__contacts">
         <div class="competition__wrapper">
-          <fieldset class="competition-fieldset">
+          <fieldset class="competition__fieldset competition__fieldset--contacts">
+            <legend class="competition__form-title competition__form-title--contacts">Контактная информация</legend>
             <div class="competition__contacts-section">
-              <p>
+              <p class="competition__contacts--1">
                 <label class="competition__form-label" for="user-phone">Номер телефона</label>
                 <input class="competition__form-input competition__form-input--phone" type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+                <span></span>
               </p>
 
-              <p>
-                <label class="competition__form-label" for="user-mail">Адрес почты:</label>
-                <input class="competition__form-input competition__form-input--email" id="user-mail" name="user-mail" type="email" placeholder="Введите почту*"
+              <p class="competition__contacts--2">
+                <label class="competition__form-label" for="user-mail">Адрес почты</label>
+                <input class="competition__form-input competition__form-input--email" id="user-mail" name="user-mail" type="email" placeholder="Введите почту *"
                   required>
+                <span></span>
               </p>
             </div>
 
           </fieldset>
 
         </div>
+      </section>
 
-      </div>
 
-      <div class="competition__form-section competition__app competition__form--app">
-        <div class="competition__wrapper">
-          <fieldset class="competition-fieldset competition__app-fieldset">
-            <p class="competition__form-title">С каким приложением путешествовали?</p>
+      <section class="competition__section competition__app">
+        <div class="competition__wrapper competition__wrapper--app">
+          <fieldset class="competition__fieldset competition__fieldset--app">
+            <legend class="competition__form-title competition__form-title--app">С каким приложением путешествовали?</legend>
 
             <ul class="competition__list competition__app-list">
               <li class="competition__app-item">
@@ -175,22 +185,29 @@
           </fieldset>
 
         </div>
+      </section>
 
-      </div>
 
-      <div class="competition__wrapper competition__form--emotions">
-        <fieldset class="competition-fieldset">
-          <div class="competition__form-section">
-            <p class="competition__form-title competition__form-title--textarea">Опишите свои эмоции</p>
-            <textarea class="competition__textarea" id="user-emotions" width="100%" rows="6" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <section class="competition__section competition__emotions">
+        <div class="competition__wrapper">
+          <fieldset class="competition__fieldset">
+            <legend class="competition__form-title competition__form-title--textarea">Опишите свои эмоции</legend>
+            <textarea class="competition__textarea" id="user-emotions" width="100%" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
+      </section>
+
+
+      <section class="competition__section competition__submit">
+        <div class="competition__wrapper">
+          <div class="competition__submit-inner">
+              <input class="competition__submit-input btn" type="submit" value="Отправить форму">
+              <p class="competition__form-remark">
+                <span class="competition__star">* </span> &mdash; Обязательные <span class="competition__form-remark--desktop">для заполнения</span> поля
+              </p>
           </div>
-        </fieldset>
-
-        <input class="competition__form-submit btn" type="submit" value="Отправить форму">
-        <p class="competition__form-remark">
-          <span class="competition__star">* </span> &mdash; Обязательные поля</p>
-
-      </div>
+        </div>
+      </section>
 
     </form>
   </main>

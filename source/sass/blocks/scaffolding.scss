@@ -63,11 +63,3 @@ button {
   cursor: pointer;
   outline: none;
 }
-
-fieldset {
-  border: 0;
-
-  @media #{$tablet-width} {
-    border: 2px solid $border-gray;
-  }
-}

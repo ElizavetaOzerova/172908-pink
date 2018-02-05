@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Pink</title>
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="img/favicon.ico">
 
   <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
@@ -117,8 +118,8 @@
         <div class="proof__text">
           <b class="proof__title">Эффект
             <br> на 24 часа!</b>
-          <p class="proof__description">Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится
-            целые сутки!</p>
+          <p class="proof__description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения
+            длится целые сутки!</p>
           <a href="#" class="proof__link">Узнать больше об исследовании</a>
         </div>
 
@@ -141,22 +142,21 @@
 
           <div class="reviews__item slider__item">
             <div class="reviews__author-container">
-              <h3 class="reviews__author">Олег Соловых</h3>
+              <h3 class="reviews__author">Елена Кутузова</h3>
               <p class="reviews__author-description">42 лет, таксист</p>
             </div>
 
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              со своей будущим мужем в комментариях к выложенной фотографии!»</p>
           </div>
 
           <div class="reviews__item slider__item">
             <div class="reviews__author-container">
-              <h3 class="reviews__author">Эдгар Васильев</h3>
+              <h3 class="reviews__author">Григорий Васильев</h3>
               <p class="reviews__author-description">27 лет, водитель маршрутки</p>
             </div>
 
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
           </div>
         </div>
 
@@ -165,7 +165,7 @@
           <input class="slider__toggle slider__toggle--2" type="radio" id="toggle-2" name="reviews-toggle">
           <input class="slider__toggle slider__toggle--3" type="radio" id="toggle-3" name="reviews-toggle">
 
-          <div class="slider__labels">
+          <div class="slider__labels-wrapper">
             <label class="slider__label slider__label--1" for="toggle-1"></label>
             <label class="slider__label slider__label--2" for="toggle-2"></label>
             <label class="slider__label slider__label--3" for="toggle-3"></label>
@@ -180,6 +180,7 @@
         <table class="price__table slider__list">
           <thead>
             <tr>
+              <td class="price__package price__package--1"></td>
               <td class="price__package">
                 <b class="price__package-name">База</b>
                 <p class="price__package-value">1,99 USD</p>
@@ -195,19 +196,22 @@
             </tr>
           </thead>
           <tr>
-            <td class="price__included price__included--yes">Розовый фильтр</td>
-            <td class="price__included price__included--yes">Розовый фильтр</td>
-            <td class="price__included price__included--yes">Розовый фильтр</td>
+            <td class="price__included price__included--yes price__included--1">Розовый фильтр</td>
+            <td class="price__included price__included--yes"><span>Розовый фильтр</span></td>
+            <td class="price__included price__included--yes"><span>Розовый фильтр</span></td>
+            <td class="price__included price__included--yes"><span>Розовый фильтр</span></td>
           </tr>
           <tr>
-            <td class="price__included price__included--no">Смайлики</td>
-            <td class="price__included price__included--yes">Смайлики</td>
-            <td class="price__included price__included--yes">Смайлики</td>
+            <td class="price__included price__included--no price__included--1">Смайлики</td>
+            <td class="price__included price__included--no"><span>Смайлики</span></td>
+            <td class="price__included price__included--yes"><span>Смайлики</span></td>
+            <td class="price__included price__included--yes"><span>Смайлики</span></td>
           </tr>
           <tr>
-            <td class="price__included price__included--no">Комментарии</td>
-            <td class="price__included price__included--no">Комментарии</td>
-            <td class="price__included price__included--yes">Комментарии</td>
+            <td class="price__included price__included--no price__included--1">Комментарии</td>
+            <td class="price__included price__included--no"><span>Комментарии</span></td>
+            <td class="price__included price__included--no"><span>Комментарии</span></td>
+            <td class="price__included price__included--yes"><span>Комментарии</span></td>
           </tr>
         </table>
 
@@ -216,7 +220,7 @@
           <input class="slider__toggle slider__toggle--5" type="radio" id="toggle-5" name="price-toggle" checked>
           <input class="slider__toggle slider__toggle--6" type="radio" id="toggle-6" name="price-toggle">
 
-          <div class="slider__labels">
+          <div class="slider__labels-wrapper slider__labels-wrapper--price">
             <label class="slider__label slider__label--4" for="toggle-4"></label>
             <label class="slider__label slider__label--5" for="toggle-5"></label>
             <label class="slider__label slider__label--6" for="toggle-6"></label>
@@ -241,7 +245,7 @@
         <div class="contacts-item contacts-item--mail">
           <h3 class="contacts__title">Пишите:</h3>
           <p class="contacts__text">
-            <a class="contacts__link contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__link contacts__mail" target="_blank" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </div>
 
@@ -254,12 +258,12 @@
     </div>
 
     <div class="map__wrapper">
-      <img src="img/bg-triangle-white-footer.svg" class="map__decoration" alt="">
+      <img src="img/bg-triangle-white-footer.svg" class="map__decoration" alt="Карта">
       <div id="map" class="map"></div>
     </div>
 
     <div class="page-footer__wrapper page-footer__wrapper--index-bottom">
-      <a href="#" class="page-footer__logo logo">
+      <a href="#" class="page-footer__logo">
         <img src="img/logo-pink-blue-mobile.svg" alt="">
       </a>
 

@@ -2,6 +2,18 @@
   display: none;
 }
 
+.slider__labels-wrapper {
+  &--price {
+    @media #{$tablet-width} {
+      display: none;
+    }
+  }
+
+  @media #{$desktop-width} {
+    display: none;
+  }
+}
+
 .slider__label {
   display: inline-block;
   width: 6px;
@@ -20,11 +32,11 @@
   }
 }
 
-.slider__toggle--1:checked ~ .slider__labels .slider__label--1,
-.slider__toggle--2:checked ~ .slider__labels .slider__label--2,
-.slider__toggle--3:checked ~ .slider__labels .slider__label--3,
-.slider__toggle--4:checked ~ .slider__labels .slider__label--4,
-.slider__toggle--5:checked ~ .slider__labels .slider__label--5,
-.slider__toggle--6:checked ~ .slider__labels .slider__label--6 {
+.slider__toggle--1:checked ~ .slider__labels-wrapper .slider__label--1,
+.slider__toggle--2:checked ~ .slider__labels-wrapper .slider__label--2,
+.slider__toggle--3:checked ~ .slider__labels-wrapper .slider__label--3,
+.slider__toggle--4:checked ~ .slider__labels-wrapper .slider__label--4,
+.slider__toggle--5:checked ~ .slider__labels-wrapper .slider__label--5,
+.slider__toggle--6:checked ~ .slider__labels-wrapper .slider__label--6 {
   border: 3px solid #283645;
 }

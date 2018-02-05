@@ -13,7 +13,7 @@
 
 .proof__wrapper {
   @include wrapper;
-  padding: 60px 0 90px 0;
+  padding: 60px 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -24,12 +24,16 @@
   width: 240px;
   height: 280px;
   margin-right: 60px;
+  // background-image: url("../img/timer.svg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: contain;
 
   &::before {
     content: "24";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 19px;
+    top: 55px;
     width: 170px;
     height: 170px;
     line-height: 170px;
@@ -47,8 +51,8 @@
     height: 350px;
 
     &::before {
-      left: 0;
-      top: 0;
+      left: 24px;
+      top: 65px;
       width: 230px;
       height: 230px;
       line-height: 230px;
@@ -58,16 +62,16 @@
 }
 
 .proof__text {
-  width: 275px;
+  width: 305px;
 
   @media #{$desktop-width} {
-    width: 525px;
+    width: 526px;
   }
 }
 
 .proof__title {
   display: block;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 15px;
 
   @include bold-font;
@@ -76,10 +80,12 @@
 
   @media #{$desktop-width} {
     margin-top: 90px;
+  }
+}
 
-    & br {
-      display: none;
-    }
+.proof__title br {
+  @media #{$desktop-width} {
+    display: none;
   }
 }
 

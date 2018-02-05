@@ -2,10 +2,12 @@
   position: relative;
   background-color: $background-gray;
   color: $white;
+  box-sizing: border-box;
 
   @media #{$tablet-width} {
     min-height: 730px;
-    background: url("../img/iphone-hand-mobile@1x.png") 90% 100%, url("../img/bg-back-mobile@1x.jpg") 0 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: 90% 100%, 0 0;
     background-color: $background-gray;
     background-repeat: no-repeat;
     background-size: 480px, cover;
@@ -13,7 +15,8 @@
 
   @media #{$desktop-width} {
     min-height: 853px;
-    background: url("../img/iphone-hand-mobile@1x.png") 75% 100%, url("../img/bg-back-mobile@1x.jpg") 0 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: 75% 100%, 0 0;
     background-color: $background-gray;
     background-repeat: no-repeat;
     background-size: 615px, cover;
@@ -41,7 +44,11 @@
 
   @media #{$tablet-width} {
     width: 300px;
-    margin-top: 200px;
+    margin-top: 178px;
+  }
+
+  @media #{$desktop-width} {
+    margin-top: 190px;
   }
 }
 
@@ -104,6 +111,10 @@
 .intro__icon-link:not(:last-of-type) {
   display: inline-block;
   margin-right: 25px;
+
+  @media #{$tablet-width} {
+    margin-right: 28px;
+  }
 }
 
 .intro__description {
@@ -114,5 +125,6 @@
 
   @media #{$tablet-width} {
     font-size: 18px;
+    line-height: 1.4;
   }
 }

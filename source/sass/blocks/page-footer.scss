@@ -29,14 +29,19 @@
 
 .page-footer__contacts-wrapper {
   @include wrapper;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
+
+  @media #{$desktop-width} {
+    padding: 65px 0 0 0;
+  }
 }
 
 .page-footer__title {
   margin-bottom: 32px;
+  line-height: 1.2;
 
   @media #{$tablet-width} {
-    margin-bottom: 42px;
+    margin-bottom: 46px;
     font-size: 40px;
   }
 

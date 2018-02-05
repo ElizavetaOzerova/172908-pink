@@ -20,6 +20,7 @@
   right: 20px;
   width: 59px;
   height: 35px;
+  padding: 0;
   border: none;
   z-index: 9;
   cursor: pointer;
@@ -144,6 +145,8 @@
 }
 
 .main-menu--opened .main-menu__toggle {
+  width: 35px;
+  height: 35px;
   background-color: transparent;
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;

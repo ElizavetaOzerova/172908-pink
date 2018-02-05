@@ -4,13 +4,53 @@
 }
 
 .reviews__wrapper {
+  @include wrapper;
   padding: 40px 0;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media #{$tablet-width} {
+    flex-direction: column-reverse;
+    min-height: 200px;
+  }
 }
 
 .reviews__author {
   margin-bottom: 22px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 5px;
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
 }
 
 .reviews__text {
   line-height: 2;
+
+  @media #{$tablet-width} {
+    line-height: 1.7;
+    font-size: 18px;
+  }
+}
+
+.reviews__author-description {
+  display: none;
+
+  @media #{$tablet-width} {
+    display: block;
+    font-size: 14px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 18px;
+  }
 }

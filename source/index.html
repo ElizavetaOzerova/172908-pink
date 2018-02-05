@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
 
   <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
@@ -16,58 +17,60 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
+        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
+        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
       </a>
-
-      <button class="main-nav__toggle" type="button">Закрыть меню</button>
     </div>
 
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list main-nav__list--active">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__list">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__list">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__list">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="main-menu main-menu--closed">
+      <button class="main-menu__toggle" type="button"></button>
+
+      <ul class="main-menu__list">
+        <li class="main-menu__item main-menu__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="competition.html">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
     <section class="intro">
-      <div class="intro__header">
-        <div class="intro-wrapper"></div>
-      </div>
+      <div class="intro__header"></div>
 
       <div class="intro__download">
         <div class="intro__wrapper">
+          <div class="intro__text">
+            <h1 class="intro__title">Взгляните
+              <br>на жизнь
+              <br>иначе!</h1>
 
-          <a href="#" class="intro__btn btn">Скачать приложение</a>
+            <a href="#" class="intro__btn btn">Скачать приложение</a>
 
-          <div class="intro__icons-wrapper">
-            <a class="intro__icon-link" href="#" title="Pink для iOS">
-              <img class="intro__icon" src="img/logo-apple.svg" alt="">
-            </a>
-            <a class="intro__icon-link" href="#" title="Pink для Android">
-              <img class="intro__icon" src="img/logo-android.svg" alt="">
-            </a>
-            <a class="intro__icon-link" href="#" title="Pink для Windows">
-              <img class="intro__icon" src="img/logo-microsoft.svg" alt="">
-            </a>
+            <div class="intro__icons-wrapper">
+              <a class="intro__icon-link" href="#" title="Pink для iOS">
+                <img class="intro__icon" src="img/logo-apple.svg" alt="">
+              </a>
+              <a class="intro__icon-link" href="#" title="Pink для Android">
+                <img class="intro__icon" src="img/logo-android.svg" alt="">
+              </a>
+              <a class="intro__icon-link" href="#" title="Pink для Windows">
+                <img class="intro__icon" src="img/logo-microsoft.svg" alt="">
+              </a>
+            </div>
+
+            <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-
         </div>
       </div>
 
@@ -86,24 +89,38 @@
       </div>
 
       <div class="features__container">
-        <div class="features__wrapper">
-          <ul class="features__list">
-            <li class="features__item">
-              <h3 class="features__item-name">Поднимает настроение</h3>
-              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__item-name">Меняет мир вокруг</h3>
-              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__item-name">Заводит новых друзей</h3>
-              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="pink phone">
-            </li>
-          </ul>
+        <div class="features__wrapper features__list">
+
+          <div class="features__item features__item--initial">
+            <h3 class="features__item-name">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="features__item features__item--intermediary">
+            <h3 class="features__item-name">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="features__item features__item--result">
+            <h3 class="features__item-name">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+
         </div>
       </div>
+
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="proof__wrapper">
+        <div class="proof__img"></div>
+
+        <div class="proof__text">
+          <b class="proof__title">Эффект
+            <br> на 24 часа!</b>
+          <p class="proof__description">Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится
+            целые сутки!</p>
+          <a href="#" class="proof__link">Узнать больше об исследовании</a>
+        </div>
 
       </div>
     </section>
@@ -111,18 +128,33 @@
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <div class="reviews__list slider__list">
+
           <div class="reviews__item slider__item">
-            <h3 class="reviews__author">Николай Петров</h3>
+            <div class="reviews__author-container">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__author-description">25 лет, водитель трамвая</p>
+            </div>
+
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
+
           <div class="reviews__item slider__item">
-            <h3 class="reviews__author">Николай Петров</h3>
+            <div class="reviews__author-container">
+              <h3 class="reviews__author">Олег Соловых</h3>
+              <p class="reviews__author-description">42 лет, таксист</p>
+            </div>
+
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
+
           <div class="reviews__item slider__item">
-            <h3 class="reviews__author">Николай Петров</h3>
+            <div class="reviews__author-container">
+              <h3 class="reviews__author">Эдгар Васильев</h3>
+              <p class="reviews__author-description">27 лет, водитель маршрутки</p>
+            </div>
+
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
@@ -149,16 +181,16 @@
           <thead>
             <tr>
               <td class="price__package">
-                <b class="price__package-name">Стандарт</b>
-                <p class="price__package-value">3,99 USD</p>
+                <b class="price__package-name">База</b>
+                <p class="price__package-value">1,99 USD</p>
               </td>
               <td class="price__package price__package--hit">
                 <b class="price__package-name">Стандарт</b>
                 <p class="price__package-value">3,99 USD</p>
               </td>
               <td class="price__package">
-                <b class="price__package-name">Стандарт</b>
-                <p class="price__package-value">3,99 USD</p>
+                <b class="price__package-name">Анлим</b>
+                <p class="price__package-value">9,99 USD</p>
               </td>
             </tr>
           </thead>
@@ -197,7 +229,8 @@
 
   <footer class="page-footer">
     <div class="page-footer__contacts-wrapper">
-      <h2 class="page-footer__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+      <h2 class="page-footer__title">Остались вопросы?
+        <br>Свяжитесь с нами!</h2>
 
       <div class="contacts">
         <div class="contacts-item contacts-item--phone">
@@ -220,10 +253,10 @@
 
     </div>
 
-    <div class="map-container">
-      <div class="map" id="map"></div>
+    <div class="map__wrapper">
+      <img src="img/bg-triangle-white-footer.svg" class="map__decoration" alt="">
+      <div id="map" class="map"></div>
     </div>
-
 
     <div class="page-footer__wrapper page-footer__wrapper--index-bottom">
       <a href="#" class="page-footer__logo logo">
@@ -249,6 +282,7 @@
   </footer>
 
   <script src="js/map.js"></script>
+  <script src="js/main-menu.js"></script>
 
 </body>
 

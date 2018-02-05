@@ -1,0 +1,155 @@
+.post {
+  width: 100%;
+  background-color: $light-gray;
+
+  @media #{$desktop-width} {
+    width: auto;
+    background-color: $white;
+  }
+}
+
+.post__wrapper {
+  @include wrapper;
+  background-color: $light-gray;
+  padding-bottom: 40px;
+
+  @media #{$tablet-width} {
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+
+  @media #{$desktop-width} {
+    box-sizing: border-box;
+    padding: 57px 60px 57px 80px;
+  }
+}
+
+.post__filter-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 205px;
+  margin: 0 auto 35px auto;
+
+  @media #{$tablet-width} {
+    display: none;
+  }
+}
+
+.post__filter-controls input {
+  display: none;
+}
+
+.post__filter-controls label[for="upload-filter-1"] {
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.post__filter-controls label[for="upload-filter-2"] {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/icon-editor-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.post__filter-controls label[for="upload-filter-3"] {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon-editor-contrast.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.post__filter-toggle {
+  display: inline-block;
+}
+
+.post__image-select {
+  margin: 0;
+  padding: 20px 0 38px 0;
+  border: none;
+  text-align: center;
+  line-height: 0;
+
+  @media #{$tablet-width} {
+    float: left;
+    padding: 0;
+  }
+}
+
+.post__button-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  @media #{$tablet-width} {
+    margin: 0 2px 0 auto;
+  }
+
+  @media #{$desktop-width} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 410px;
+  }
+}
+
+.post__btn {
+  margin-bottom: 10px;
+  border-radius: 60px;
+  background-color: transparent;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--submit {
+    color: $pink;
+    border: 3px solid $pink;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $pink;
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--reset {
+    color: rgba($gray, 0.1);
+    border: 3px solid rgba($gray, 0.1);
+
+    &:hover {
+      color: rgba($gray, 0.6);
+      border: 3px solid rgba($gray, 0.6);
+    }
+
+    &:active {
+      border-color: transparent;
+      background-color: rgba($gray, 0.6);
+      color: rgba($white, 0.6);
+    }
+  }
+
+  @media #{$tablet-width} {
+    width: 262px;
+    margin-bottom: 20px;
+  }
+
+  @media #{$desktop-width} {
+    width: 184px;
+    margin: 0;
+  }
+}

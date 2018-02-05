@@ -18,7 +18,7 @@
   @media #{$tablet-width} {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 35px 0;
   }
 
@@ -37,6 +37,7 @@
 
   @media #{$tablet-width} {
     margin-bottom: 42px;
+    font-size: 40px;
   }
 
   @media #{$desktop-width} {
@@ -102,6 +103,7 @@
 
   @media #{$tablet-width} {
     flex-basis: 170px;
+    margin-top: 9px;
   }
 
   @media #{$desktop-width} {

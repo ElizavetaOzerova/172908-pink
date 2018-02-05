@@ -9,12 +9,13 @@
   background-color: $white;
   box-shadow: 0 7px 15px 3px rgba($black, 0.1);
 
-  &--fail {
-    padding-bottom: 50px;
-  }
-
   &--show {
     display: block;
+  }
+
+  @media #{$tablet-width} {
+    width: 462px;
+    margin-left: -231px;
   }
 }
 
@@ -22,12 +23,22 @@
   margin-top: 50px;
   margin-bottom: 28px;
   padding: 0 27px;
+
+  @media #{$tablet-width} {
+    font-size: 30px;
+    padding: 0 116px;
+  }
 }
 
 .modal__text {
   margin-bottom: 35px;
-  padding: 0 26px;
+  padding: 0 20px;
   line-height: 1.7;
+
+  @media #{$tablet-width} {
+    padding: 0 72px;
+    font-size: 18px;
+  }
 }
 
 .modal__btn-container {
@@ -36,6 +47,8 @@
 }
 
 .modal__btn {
+  padding-top: 21px;
+  padding-bottom: 21px;
   text-transform: uppercase;
   background-color: $green;
   border-radius: 2px;

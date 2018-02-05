@@ -1,14 +1,13 @@
 @mixin wrapper {
-  width: 87.5%;
+  width: 280px;
   margin: 0 auto;
 
   @media #{$tablet-width} {
-    width: 93.9393939394%;
+    width: 620px;
   }
 
   @media #{$desktop-width} {
-    width: 78.3333333333%;
-    max-width: 940px;
+    width: 940px;
   }
 }
 
@@ -27,6 +26,11 @@
 @mixin light-font {
   font-family: $font-family--light;
   font-weight: lighter;
+}
+
+@mixin regular-font {
+  font-family: $font-family--base;
+  font-weight: normal;
 }
 
 @mixin bold-font {

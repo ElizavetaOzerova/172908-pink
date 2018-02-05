@@ -6,6 +6,10 @@
   padding-bottom: 45px;
 }
 
+.price__wrapper {
+  @include wrapper;
+}
+
 .price__table {
   box-sizing: border-box;
   width: 840px;

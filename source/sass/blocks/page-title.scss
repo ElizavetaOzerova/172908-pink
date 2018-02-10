@@ -13,19 +13,33 @@
     padding: 95px 0 50px 0;
   }
 
+  @media #{$retina} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media #{$tablet-width} {
     padding: 180px 0 140px 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     &--form {
       padding: 180px 0 75px 0;
+    }
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
   @media #{$desktop-width} {
     padding: 175px 0 105px 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     &--form {
       padding: 175px 0 95px 0;
+    }
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }

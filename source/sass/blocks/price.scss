@@ -107,13 +107,13 @@
 
     &--hit {
       &::before {
-        top: -13px;
         left: 0;
+        background-image: url("../img/bg-hit-tablet.svg");
       }
 
       &::after {
-        top: 11px;
-        left: 5px;
+        top: 12px;
+        left: 6px;
       }
     }
   }
@@ -123,13 +123,12 @@
 
     &--hit {
       &::before {
-        top: 0;
-        left: 0;
+        background-image: url("../img/bg-hit.svg");
       }
 
       &::after {
-        top: 17px;
-        left: 10px;
+        top: 18px;
+        left: 11px;
       }
     }
   }

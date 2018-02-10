@@ -20,9 +20,11 @@
 
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
-          <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
-          <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </picture>
         </a>
       </div>
 
@@ -63,13 +65,13 @@
 
             <div class="intro__icons-wrapper">
               <a class="intro__icon-link" href="#" title="Pink для iOS">
-                <img class="intro__icon" src="img/logo-apple.svg" alt="">
+                <img class="intro__icon" src="img/logo-apple.svg" width="47" height="56" alt="iOS">
               </a>
               <a class="intro__icon-link" href="#" title="Pink для Android">
-                <img class="intro__icon" src="img/logo-android.svg" alt="">
+                <img class="intro__icon" src="img/logo-android.svg" width="43" height="47" alt="Android">
               </a>
               <a class="intro__icon-link" href="#" title="Pink для Windows">
-                <img class="intro__icon" src="img/logo-microsoft.svg" alt="">
+                <img class="intro__icon" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows">
               </a>
             </div>
 
@@ -289,14 +291,17 @@
 
     </div>
 
-    <div class="map__wrapper">
-      <img src="img/bg-triangle-white-footer.svg" class="map__decoration" alt="Карта">
-      <div id="map" class="map"></div>
+    <div class="map">
+      <img src="img/bg-triangle-white-footer.svg" class="map__decoration" alt="Карта" width="100%" height="auto">
+      <div id="map" class="map__widget"></div>
     </div>
 
     <div class="page-footer__wrapper page-footer__wrapper--index-bottom">
       <a href="#" class="page-footer__logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+        </picture>
       </a>
 
       <div class="page-footer__socials">
@@ -311,7 +316,7 @@
       <div class="page-footer__copyright">
         Разработано
         <a href="https://htmlacademy.ru/" target="_blank" title="HTML Academy" class="page-footer__copyright-link">
-          <img src="img/htmlacademy.svg" alt="" width="38" height="43">
+          <img src="img/htmlacademy.svg" alt="HTML Academy" width="38" height="43">
         </a>
       </div>
     </div>

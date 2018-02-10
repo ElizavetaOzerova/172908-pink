@@ -17,9 +17,11 @@
     <div class="page-header__inner">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg" alt="PINK">
-          <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg" alt="PINK">
-          <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg" alt="PINK">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </picture>
         </a>
       </div>
 
@@ -93,43 +95,43 @@
               <legend class="competition__form-title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="competition__list competition__achievement-list">
                 <li class="competition__achievement-item competition__achievement-item--shark">
-                  <label class="competition__achievement-label">
-                    <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="1" checked>
+                  <label class="competition__achievement-label" for="achievement-1">
+                    <input class="competition__achievement-input" type="checkbox" id="achievement-1" name="achievement[]" value="1" checked>
                     <span class="competition__achievement-check"></span>Сделал селфи с акулой
                   </label>
                 </li>
 
                 <li class="competition__achievement-item competition__achievement-item--beach">
-                  <label class="competition__achievement-label">
-                    <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="2" checked>
+                  <label class="competition__achievement-label" for="achievement-2">
+                    <input class="competition__achievement-input" type="checkbox" id="achievement-2" name="achievement[]" value="2" checked>
                     <span class="competition__achievement-check"></span>Обгорел на пляже
                   </label>
                 </li>
 
                 <li class="competition__achievement-item competition__achievement-item--chuck">
-                  <label class="competition__achievement-label">
-                    <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="3">
+                  <label class="competition__achievement-label" for="achievement-3">
+                    <input class="competition__achievement-input" type="checkbox" id="achievement-3" name="achievement[]" value="3">
                     <span class="competition__achievement-check"></span>Видел Чака Норриса
                   </label>
                 </li>
 
                 <li class="competition__achievement-item competition__achievement-item--gift">
-                  <label class="competition__achievement-label">
-                    <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="4">
+                  <label class="competition__achievement-label" for="achievement-4">
+                    <input class="competition__achievement-input" type="checkbox" id="achievement-4" name="achievement[]" value="4">
                     <span class="competition__achievement-check"></span>Накупил сувениров
                   </label>
                 </li>
 
                 <li class="competition__achievement-item competition__achievement-item--tower">
-                  <label class="competition__achievement-label">
-                    <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="5" checked>
+                  <label class="competition__achievement-label" for="achievement-5">
+                    <input class="competition__achievement-input" type="checkbox" id="achievement-5" name="achievement[]" value="5" checked>
                     <span class="competition__achievement-check"></span>Удержал башню
                   </label>
                 </li>
 
                 <li class="competition__achievement-item competition__achievement-item--hotel">
-                  <label class="competition__achievement-label">
-                    <input class="competition__achievement-input" type="checkbox" name="achievement[]" value="6">
+                  <label class="competition__achievement-label" for="achievement-6">
+                    <input class="competition__achievement-input" type="checkbox" id="achievement-6" name="achievement[]" value="6">
                     <span class="competition__achievement-check"></span>Разгромил отель
                   </label>
                 </li>
@@ -145,13 +147,13 @@
             <fieldset class="competition__fieldset competition__fieldset--contacts">
               <legend class="competition__form-title competition__form-title--contacts">Контактная информация</legend>
               <div class="competition__contacts-section">
-                <p class="competition__contacts--1">
+                <p class="competition__contacts-text competition__contacts-text--1">
                   <label class="competition__form-label" for="user-phone">Номер телефона</label>
                   <input class="competition__form-input competition__form-input--phone" type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
                   <span></span>
                 </p>
 
-                <p class="competition__contacts--2">
+                <p class="competition__contacts-text competition__contacts-text--2">
                   <label class="competition__form-label" for="user-mail">Адрес почты</label>
                   <input class="competition__form-input competition__form-input--email" id="user-mail" name="user-mail" type="email" placeholder="Введите почту *"
                     required>
@@ -221,7 +223,10 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="#" class="page-footer__logo logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+        </picture>
       </a>
 
       <div class="page-footer__socials">

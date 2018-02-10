@@ -55,35 +55,9 @@
   }
 }
 
-.page-header__logo-mobile {
-  @media #{$tablet-width} {
-    display: none;
-  }
-}
-
-.page-header__logo-tablet {
-  display: none;
-
-  @media #{$tablet-width} {
-    display: block;
-  }
-
-  @media #{$desktop-width} {
-    display: none;
-  }
-}
-
-.page-header__logo-desktop {
-  display: none;
-
-  @media #{$desktop-width} {
-    display: block;
-  }
-}
-
 .page-header__logo img {
   @media #{$tablet-width} {
-    width: 155px;
-    height: 46px;
+    width: 147px;
+    height: 40px;
   }
 }

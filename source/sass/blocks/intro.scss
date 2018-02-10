@@ -6,20 +6,28 @@
 
   @media #{$tablet-width} {
     min-height: 730px;
-    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: 90% 100%, 0 0;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 40% bottom, center bottom;
     background-color: $background-gray;
     background-repeat: no-repeat;
-    background-size: 480px, cover;
+    background-size: 700px auto, cover;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media #{$desktop-width} {
     min-height: 853px;
-    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: 75% 100%, 0 0;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: 92% bottom, center bottom;
     background-color: $background-gray;
     background-repeat: no-repeat;
-    background-size: 615px, cover;
+    background-size: 1050px auto, cover;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -29,10 +37,15 @@
 
 .intro__header {
   min-height: 462px;
-  background: url("../img/iphone-hand-mobile@1x.png") 0 180px, url("../img/bg-back-mobile@1x.jpg") 0 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: left bottom, center bottom;
   background-color: $background-gray;
   background-repeat: no-repeat;
-  background-size: auto, cover;
+  background-size: 258px auto, cover;
+
+  @media #{$retina} {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 
   @media #{$tablet-width} {
     display: none;
@@ -108,12 +121,17 @@
   }
 }
 
-.intro__icon-link:not(:last-of-type) {
+.intro__icon-link {
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 25px;
 
   @media #{$tablet-width} {
     margin-right: 28px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
   }
 }
 

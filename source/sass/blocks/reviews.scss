@@ -3,19 +3,21 @@
   background-color: $white;
   text-align: center;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    width: 92px;
-    height: 70px;
-    margin-left: -46px;
-    background-color: $white;
-    // background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  @media #{$desktop-width} {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      width: 79px;
+      height: 63px;
+      margin-left: -46px;
+      background-color: $white;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 79px auto;
+    }
   }
 }
 

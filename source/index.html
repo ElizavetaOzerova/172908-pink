@@ -25,7 +25,7 @@
       </a>
     </div>
 
-    <nav class="main-menu main-menu--closed">
+    <nav class="main-menu main-menu--closed main-menu--nojs">
       <button class="main-menu__toggle" type="button"></button>
 
       <ul class="main-menu__list">
@@ -82,7 +82,7 @@
     <section class="features">
 
       <div class="features__title-container">
-        <div class="features__wrapper">
+        <div class="features__wrapper features__wrapper--title">
           <h2 class="features__title">Устали от серости мегаполиса?</h2>
           <h2 class="features__title">Нам есть, что вам
             <br>предложить!</h2>
@@ -127,107 +127,134 @@
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <div class="reviews__list slider__list">
+      <div class="reviews__wrapper">
+        <div class="reviews__slider">
+          <input class="reviews__toggle reviews__toggle--1 slider__toggle slider__toggle--1" type="radio" id="toggle-1" name="toggle" checked>
+          <input class="reviews__toggle reviews__toggle--2 slider__toggle slider__toggle--2" type="radio" id="toggle-2" name="toggle">
+          <input class="reviews__toggle reviews__toggle--3 slider__toggle slider__toggle--3" type="radio" id="toggle-3" name="toggle">
 
-          <div class="reviews__item slider__item">
-            <div class="reviews__author-container">
-              <h3 class="reviews__author">Николай Петров</h3>
-              <p class="reviews__author-description">25 лет, водитель трамвая</p>
-            </div>
-
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-
-          <div class="reviews__item slider__item">
-            <div class="reviews__author-container">
-              <h3 class="reviews__author">Елена Кутузова</h3>
-              <p class="reviews__author-description">42 лет, таксист</p>
-            </div>
-
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущим мужем в комментариях к выложенной фотографии!»</p>
-          </div>
-
-          <div class="reviews__item slider__item">
-            <div class="reviews__author-container">
-              <h3 class="reviews__author">Григорий Васильев</h3>
-              <p class="reviews__author-description">27 лет, водитель маршрутки</p>
-            </div>
-
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
-          </div>
-        </div>
-
-        <div class="reviews__toggles slider__toggles">
-          <input class="slider__toggle slider__toggle--1" type="radio" id="toggle-1" name="reviews-toggle" checked>
-          <input class="slider__toggle slider__toggle--2" type="radio" id="toggle-2" name="reviews-toggle">
-          <input class="slider__toggle slider__toggle--3" type="radio" id="toggle-3" name="reviews-toggle">
-
-          <div class="slider__labels-wrapper">
+          <div class="review-slider__controls slider__labels-wrapper">
             <label class="slider__label slider__label--1" for="toggle-1"></label>
             <label class="slider__label slider__label--2" for="toggle-2"></label>
             <label class="slider__label slider__label--3" for="toggle-3"></label>
           </div>
+
+          <div class="reviews__slider-inner">
+            <div class="reviews__list">
+
+              <div class="reviews__item slider__item">
+                <div class="reviews__author-container">
+                  <h3 class="reviews__author">Николай Петров</h3>
+                  <p class="reviews__author-description">25 лет, водитель трамвая</p>
+                </div>
+
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+                  со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+
+              <div class="reviews__item slider__item">
+                <div class="reviews__author-container">
+                  <h3 class="reviews__author">Елена Кутузова</h3>
+                  <p class="reviews__author-description">42 лет, таксист</p>
+                </div>
+
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+                  со своей будущим мужем в комментариях к выложенной фотографии!»</p>
+              </div>
+
+              <div class="reviews__item slider__item">
+                <div class="reviews__author-container">
+                  <h3 class="reviews__author">Григорий Васильев</h3>
+                  <p class="reviews__author-description">27 лет, водитель маршрутки</p>
+                </div>
+
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
     </section>
 
     <section class="price">
-      <div class="price__wrapper slider">
-        <table class="price__table slider__list">
-          <thead>
-            <tr>
-              <td class="price__package price__package--1"></td>
-              <td class="price__package">
-                <b class="price__package-name">База</b>
-                <p class="price__package-value">1,99 USD</p>
-              </td>
-              <td class="price__package price__package--hit">
-                <b class="price__package-name">Стандарт</b>
-                <p class="price__package-value">3,99 USD</p>
-              </td>
-              <td class="price__package">
-                <b class="price__package-name">Анлим</b>
-                <p class="price__package-value">9,99 USD</p>
-              </td>
-            </tr>
-          </thead>
-          <tr>
-            <td class="price__included price__included--yes price__included--1">Розовый фильтр</td>
-            <td class="price__included price__included--yes"><span>Розовый фильтр</span></td>
-            <td class="price__included price__included--yes"><span>Розовый фильтр</span></td>
-            <td class="price__included price__included--yes"><span>Розовый фильтр</span></td>
-          </tr>
-          <tr>
-            <td class="price__included price__included--no price__included--1">Смайлики</td>
-            <td class="price__included price__included--no"><span>Смайлики</span></td>
-            <td class="price__included price__included--yes"><span>Смайлики</span></td>
-            <td class="price__included price__included--yes"><span>Смайлики</span></td>
-          </tr>
-          <tr>
-            <td class="price__included price__included--no price__included--1">Комментарии</td>
-            <td class="price__included price__included--no"><span>Комментарии</span></td>
-            <td class="price__included price__included--no"><span>Комментарии</span></td>
-            <td class="price__included price__included--yes"><span>Комментарии</span></td>
-          </tr>
-        </table>
+      <div class="price__wrapper">
+          <input class="price__toggle price__toggle--1 slider__toggle slider__toggle--4" type="radio" id="toggle-4" name="price-toggle">
+          <input class="price__toggle price__toggle--2 slider__toggle slider__toggle--5" type="radio" id="toggle-5" name="price-toggle" checked>
+          <input class="price__toggle price__toggle--3 slider__toggle slider__toggle--6" type="radio" id="toggle-6" name="price-toggle">
 
-        <div class="price__toggles slider__toggles">
-          <input class="slider__toggle slider__toggle--4" type="radio" id="toggle-4" name="price-toggle">
-          <input class="slider__toggle slider__toggle--5" type="radio" id="toggle-5" name="price-toggle" checked>
-          <input class="slider__toggle slider__toggle--6" type="radio" id="toggle-6" name="price-toggle">
+          <div class="price__slides-container">
+            <div class="price__slides">
 
-          <div class="slider__labels-wrapper slider__labels-wrapper--price">
+              <table class="price__table slider__list">
+                <thead>
+                  <tr>
+                    <td class="price__package price__package--1"></td>
+                    <td class="price__package">
+                      <b class="price__package-name">База</b>
+                      <p class="price__package-value">1,99 USD</p>
+                    </td>
+                    <td class="price__package price__package--hit">
+                      <b class="price__package-name">Стандарт</b>
+                      <p class="price__package-value">3,99 USD</p>
+                    </td>
+                    <td class="price__package">
+                      <b class="price__package-name">Анлим</b>
+                      <p class="price__package-value">9,99 USD</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tr>
+                  <td class="price__included price__included--yes price__included--1">Розовый фильтр</td>
+                  <td class="price__included price__included--yes">
+                    <span>Розовый фильтр</span>
+                  </td>
+                  <td class="price__included price__included--yes">
+                    <span>Розовый фильтр</span>
+                  </td>
+                  <td class="price__included price__included--yes">
+                    <span>Розовый фильтр</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__included price__included--no price__included--1">Смайлики</td>
+                  <td class="price__included price__included--no">
+                    <span>Смайлики</span>
+                  </td>
+                  <td class="price__included price__included--yes">
+                    <span>Смайлики</span>
+                  </td>
+                  <td class="price__included price__included--yes">
+                    <span>Смайлики</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__included price__included--no price__included--1">Комментарии</td>
+                  <td class="price__included price__included--no">
+                    <span>Комментарии</span>
+                  </td>
+                  <td class="price__included price__included--no">
+                    <span>Комментарии</span>
+                  </td>
+                  <td class="price__included price__included--yes">
+                    <span>Комментарии</span>
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+
+          <div class="slider__labels-wrapper slider__labels-wrapper--price price-slider__controls">
             <label class="slider__label slider__label--4" for="toggle-4"></label>
             <label class="slider__label slider__label--5" for="toggle-5"></label>
             <label class="slider__label slider__label--6" for="toggle-6"></label>
           </div>
-        </div>
-
       </div>
+
     </section>
   </main>
 

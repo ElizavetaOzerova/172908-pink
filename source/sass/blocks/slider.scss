@@ -8,10 +8,6 @@
       display: none;
     }
   }
-
-  @media #{$desktop-width} {
-    display: none;
-  }
 }
 
 .slider__label {
@@ -38,5 +34,5 @@
 .slider__toggle--4:checked ~ .slider__labels-wrapper .slider__label--4,
 .slider__toggle--5:checked ~ .slider__labels-wrapper .slider__label--5,
 .slider__toggle--6:checked ~ .slider__labels-wrapper .slider__label--6 {
-  border: 3px solid #283645;
+  border: 3px solid $gray;
 }

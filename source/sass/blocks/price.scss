@@ -3,6 +3,7 @@
   background-color: $light-gray;
 
   @include bg-triangle;
+  padding-top: 90px;
   padding-bottom: 45px;
 
   @media #{$tablet-width} {
@@ -10,12 +11,18 @@
   }
 
   @media #{$desktop-width} {
+    padding-top: 150px;
     padding-bottom: 90px;
   }
 }
 
 .price__wrapper {
-  @include wrapper;
+  margin: 0;
+  padding: 0;
+
+  @media #{$tablet-width} {
+    @include wrapper;
+  }
 }
 
 .price__table {
@@ -50,19 +57,13 @@
 }
 
 .price__package {
+  width: 280px;
+  box-sizing: border-box;
   padding: 20px 80px;
   background-color: $gray;
   color: $white;
   font-size: 18px;
   border-right: 2px solid $border-gray;
-
-  @media #{$tablet-width} {
-    padding: 20px 37px;
-  }
-
-  @media #{$desktop-width} {
-    padding: 20px 65px;
-  }
 
   &--hit {
     position: relative;
@@ -99,17 +100,69 @@
       border-left: 0;
     }
   }
+
+  @media #{$tablet-width} {
+    width: 155px;
+    padding: 17px 30px;
+
+    &--hit {
+      &::before {
+        top: -13px;
+        left: 0;
+      }
+
+      &::after {
+        top: 11px;
+        left: 5px;
+      }
+    }
+  }
+
+  @media #{$desktop-width} {
+    padding: 20px 60px;
+
+    &--hit {
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        top: 17px;
+        left: 10px;
+      }
+    }
+  }
 }
 
 .price__package-name {
   @include bold-font;
+  display: block;
+  margin-bottom: 6px;
+
+  @media #{$tablet-width} {
+    font-size: 16px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 18px;
+  }
 }
 
 .price__package-value {
   margin-bottom: 0;
+  line-height: 1.1;
 
   @include light-font;
   font-size: 24px;
+
+  @media #{$tablet-width} {
+    font-size: 18px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 24px;
+  }
 }
 
 .price__included {
@@ -159,6 +212,7 @@
 
     @media #{$tablet-width} {
       display: table-cell;
+      padding: 18px;
       text-transform: none;
       font-size: 14px;
     }
@@ -172,5 +226,42 @@
 .price__included span {
   @media #{$tablet-width} {
     display: none;
+  }
+}
+
+
+.price__slides-container {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media #{$tablet-width} {
+    overflow: auto;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.price__slides {
+  width: 840px;
+  transition: transform 0.8s ease;
+
+  @media #{$tablet-width} {
+    width: auto;
+  }
+}
+
+@media (max-width: 699px) {
+  .price__toggle--1:checked ~ .price__slides-container .price__slides {
+    transform: translate(0);
+  }
+
+  .price__toggle--2:checked ~ .price__slides-container .price__slides {
+    transform: translate(-280px);
+  }
+
+  .price__toggle--3:checked ~ .price__slides-container .price__slides {
+    transform: translate(-560px);
   }
 }

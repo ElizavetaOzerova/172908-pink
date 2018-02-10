@@ -17,33 +17,37 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
-        <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
-        <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
-      </a>
+    <div class="page-header__inner">
+
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg">
+          <img class="page-header__logo-tablet" src="img/logo-pink-white-mobile.svg">
+          <img class="page-header__logo-desktop" src="img/logo-pink-white-mobile.svg">
+        </a>
+      </div>
+
+      <nav class="main-menu main-menu--closed main-menu--nojs">
+        <button class="main-menu__toggle" type="button"></button>
+
+        <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-menu main-menu--closed main-menu--nojs">
-      <button class="main-menu__toggle" type="button"></button>
-
-      <ul class="main-menu__list">
-        <li class="main-menu__item main-menu__item--active">
-          <a>Главная</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="competition.html">Конкурс</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
   </header>
+
 
   <main class="page-main">
     <section class="intro">
@@ -129,7 +133,8 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <div class="reviews__slider">
-          <input class="reviews__toggle reviews__toggle--1 slider__toggle slider__toggle--1" type="radio" id="toggle-1" name="toggle" checked>
+          <input class="reviews__toggle reviews__toggle--1 slider__toggle slider__toggle--1" type="radio" id="toggle-1" name="toggle"
+            checked>
           <input class="reviews__toggle reviews__toggle--2 slider__toggle slider__toggle--2" type="radio" id="toggle-2" name="toggle">
           <input class="reviews__toggle reviews__toggle--3 slider__toggle slider__toggle--3" type="radio" id="toggle-3" name="toggle">
 
@@ -181,78 +186,79 @@
 
     <section class="price">
       <div class="price__wrapper">
-          <input class="price__toggle price__toggle--1 slider__toggle slider__toggle--4" type="radio" id="toggle-4" name="price-toggle">
-          <input class="price__toggle price__toggle--2 slider__toggle slider__toggle--5" type="radio" id="toggle-5" name="price-toggle" checked>
-          <input class="price__toggle price__toggle--3 slider__toggle slider__toggle--6" type="radio" id="toggle-6" name="price-toggle">
+        <input class="price__toggle price__toggle--1 slider__toggle slider__toggle--4" type="radio" id="toggle-4" name="price-toggle">
+        <input class="price__toggle price__toggle--2 slider__toggle slider__toggle--5" type="radio" id="toggle-5" name="price-toggle"
+          checked>
+        <input class="price__toggle price__toggle--3 slider__toggle slider__toggle--6" type="radio" id="toggle-6" name="price-toggle">
 
-          <div class="price__slides-container">
-            <div class="price__slides">
+        <div class="price__slides-container">
+          <div class="price__slides">
 
-              <table class="price__table slider__list">
-                <thead>
-                  <tr>
-                    <td class="price__package price__package--1"></td>
-                    <td class="price__package">
-                      <b class="price__package-name">База</b>
-                      <p class="price__package-value">1,99 USD</p>
-                    </td>
-                    <td class="price__package price__package--hit">
-                      <b class="price__package-name">Стандарт</b>
-                      <p class="price__package-value">3,99 USD</p>
-                    </td>
-                    <td class="price__package">
-                      <b class="price__package-name">Анлим</b>
-                      <p class="price__package-value">9,99 USD</p>
-                    </td>
-                  </tr>
-                </thead>
+            <table class="price__table slider__list">
+              <thead>
                 <tr>
-                  <td class="price__included price__included--yes price__included--1">Розовый фильтр</td>
-                  <td class="price__included price__included--yes">
-                    <span>Розовый фильтр</span>
+                  <td class="price__package price__package--1"></td>
+                  <td class="price__package">
+                    <b class="price__package-name">База</b>
+                    <p class="price__package-value">1,99 USD</p>
                   </td>
-                  <td class="price__included price__included--yes">
-                    <span>Розовый фильтр</span>
+                  <td class="price__package price__package--hit">
+                    <b class="price__package-name">Стандарт</b>
+                    <p class="price__package-value">3,99 USD</p>
                   </td>
-                  <td class="price__included price__included--yes">
-                    <span>Розовый фильтр</span>
+                  <td class="price__package">
+                    <b class="price__package-name">Анлим</b>
+                    <p class="price__package-value">9,99 USD</p>
                   </td>
                 </tr>
-                <tr>
-                  <td class="price__included price__included--no price__included--1">Смайлики</td>
-                  <td class="price__included price__included--no">
-                    <span>Смайлики</span>
-                  </td>
-                  <td class="price__included price__included--yes">
-                    <span>Смайлики</span>
-                  </td>
-                  <td class="price__included price__included--yes">
-                    <span>Смайлики</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="price__included price__included--no price__included--1">Комментарии</td>
-                  <td class="price__included price__included--no">
-                    <span>Комментарии</span>
-                  </td>
-                  <td class="price__included price__included--no">
-                    <span>Комментарии</span>
-                  </td>
-                  <td class="price__included price__included--yes">
-                    <span>Комментарии</span>
-                  </td>
-                </tr>
-              </table>
-
-            </div>
+              </thead>
+              <tr>
+                <td class="price__included price__included--yes price__included--1">Розовый фильтр</td>
+                <td class="price__included price__included--yes">
+                  <span>Розовый фильтр</span>
+                </td>
+                <td class="price__included price__included--yes">
+                  <span>Розовый фильтр</span>
+                </td>
+                <td class="price__included price__included--yes">
+                  <span>Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__included price__included--no price__included--1">Смайлики</td>
+                <td class="price__included price__included--no">
+                  <span>Смайлики</span>
+                </td>
+                <td class="price__included price__included--yes">
+                  <span>Смайлики</span>
+                </td>
+                <td class="price__included price__included--yes">
+                  <span>Смайлики</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__included price__included--no price__included--1">Комментарии</td>
+                <td class="price__included price__included--no">
+                  <span>Комментарии</span>
+                </td>
+                <td class="price__included price__included--no">
+                  <span>Комментарии</span>
+                </td>
+                <td class="price__included price__included--yes">
+                  <span>Комментарии</span>
+                </td>
+              </tr>
+            </table>
 
           </div>
 
-          <div class="slider__labels-wrapper slider__labels-wrapper--price price-slider__controls">
-            <label class="slider__label slider__label--4" for="toggle-4"></label>
-            <label class="slider__label slider__label--5" for="toggle-5"></label>
-            <label class="slider__label slider__label--6" for="toggle-6"></label>
-          </div>
+        </div>
+
+        <div class="slider__labels-wrapper slider__labels-wrapper--price price-slider__controls">
+          <label class="slider__label slider__label--4" for="toggle-4"></label>
+          <label class="slider__label slider__label--5" for="toggle-5"></label>
+          <label class="slider__label slider__label--6" for="toggle-6"></label>
+        </div>
       </div>
 
     </section>

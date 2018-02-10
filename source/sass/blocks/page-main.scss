@@ -1,0 +1,7 @@
+.page-main {
+  margin-top: -65px;
+
+  @media #{$tablet-width} {
+    margin-top: -110px;
+  }
+}

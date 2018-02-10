@@ -1,8 +1,8 @@
 .main-menu {
   @media #{$desktop-width} {
-    width: 65%;
+    width: 638px;
     float: right;
-    margin: 35px 70px 30px 0;
+    margin: 35px 0 30px 0;
   }
 }
 
@@ -47,10 +47,10 @@
 
   @media #{$desktop-width} {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     box-sizing: border-box;
     margin-left: auto;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     background-color: transparent;
   }
 }

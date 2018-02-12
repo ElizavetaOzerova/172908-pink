@@ -1,6 +1,6 @@
 .main-menu {
   @media #{$desktop-width} {
-    width: 638px;
+    width: 67%;
     float: right;
     margin: 35px 0 30px 0;
   }
@@ -16,7 +16,7 @@
 .main-menu__toggle {
   display: block;
   position: absolute;
-  top: 15px;
+  top: 16px;
   right: 20px;
   width: 59px;
   height: 35px;
@@ -25,6 +25,7 @@
   z-index: 9;
   cursor: pointer;
   outline: none;
+  background-color: transparent;
 
   @media #{$tablet-width} {
     display: block;
@@ -95,10 +96,6 @@
   color: $white;
   cursor: pointer;
 
-  &:visited {
-    color: $white;
-  }
-
   &:hover {
     color: $pink;
   }
@@ -144,20 +141,44 @@
   }
 }
 
-.main-menu--opened .main-menu__toggle {
-  width: 35px;
-  height: 35px;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+// .main-menu--opened .main-menu__toggle {
+//   width: 35px;
+//   height: 35px;
+//   background-color: transparent;
+//   background-image: url("../img/icon-menu-cross.svg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
+.main-menu--opened .main-menu__toggle::after,
+.main-menu--opened .main-menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 1px;
+  width: 30px;
+  height: 5px;
+  border-radius: 1px;
+  background-color: $white;
 }
 
-.main-menu--closed .main-menu__toggle {
-  background-color: transparent;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.main-menu--opened .main-menu__toggle::before {
+  transform: rotate(45deg);
+}
+
+.main-menu--opened .main-menu__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-menu--closed .main-menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+  box-shadow: 0 9px 0 0 $white, 0 18px 0 0 $white;
 }
 
 .main-menu--closed .main-menu__list {

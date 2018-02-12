@@ -69,6 +69,10 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: 157px auto;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+    }
   }
 
   @media #{$tablet-width} {
@@ -82,9 +86,13 @@
       bottom: 0;
       left: 0;
       height: 480px;
-      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
-      background-size: 275px auto;
+      background-size: 268px auto;
+
+      @media #{$retina} {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      }
     }
   }
 
@@ -105,22 +113,34 @@
   background-position: 50% 0;
 
   @media #{$desktop-width} {
-    width: 260px;
-    padding: 303px 0 0 0;
+    width: 292px;
+    padding: 303px 37px 0 37px;
     margin-top: -100px;
     margin-bottom: 0;
-    background-size: 200px auto;
+    background-size: 292px auto;
 
     &--initial {
-      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+      @media #{$retina} {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      }
     }
 
     &--intermediary {
-      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+      @media #{$retina} {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      }
     }
 
     &--result {
-      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+      @media #{$retina} {
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      }
     }
   }
 }
@@ -132,12 +152,8 @@
   @media #{$desktop-width} {
     margin-bottom: 20px;
     padding-top: 55px;
-    padding-left: 15px;
-    padding-right: 15px;
     line-height: 1;
     font-size: 30px;
-    background-color: $light-gray;
-    box-shadow: 0 -7px 13px -9px rgba($black, 0.7);
   }
 }
 
@@ -146,8 +162,6 @@
   line-height: 1.8;
 
   @media #{$desktop-width} {
-    padding-left: 10px;
-    padding-right: 10px;
     line-height: 1.5;
     font-size: 18px;
     background-color: $light-gray;

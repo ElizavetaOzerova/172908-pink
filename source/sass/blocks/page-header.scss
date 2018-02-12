@@ -36,7 +36,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo-link {
   display: block;
   position: absolute;
   top: 21px;
@@ -55,7 +55,20 @@
   }
 }
 
+.page-header__logo {
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
 .page-header__logo-mobile {
+  display: block;
+
   @media #{$tablet-width} {
     display: none;
   }
@@ -78,12 +91,5 @@
 
   @media #{$desktop-width} {
     display: block;
-  }
-}
-
-.page-header__logo img {
-  @media #{$tablet-width} {
-    width: 155px;
-    height: 46px;
   }
 }

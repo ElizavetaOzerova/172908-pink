@@ -141,15 +141,6 @@
   }
 }
 
-// .main-menu--opened .main-menu__toggle {
-//   width: 35px;
-//   height: 35px;
-//   background-color: transparent;
-//   background-image: url("../img/icon-menu-cross.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-
 .main-menu--opened .main-menu__toggle::after,
 .main-menu--opened .main-menu__toggle::before {
   content: "";

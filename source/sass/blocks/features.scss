@@ -4,14 +4,14 @@
 
 .features__wrapper {
   @include wrapper;
-  padding-top: 30px;
+  padding-top: 40px;
 
   &--title {
-    padding: 40px 30px 30px 30px;
+    padding: 40px 0 35px 0;
   }
 
   @media #{$tablet-width} {
-    padding-top: 62px;
+    padding-top: 75px;
     padding-bottom: 5px;
 
     &--title {
@@ -24,7 +24,7 @@
     padding-bottom: 70px;
 
     &--title {
-      padding: 75px 65px 65px 65px;
+      padding: 65px 65px 75px 65px;
     }
   }
 }
@@ -35,13 +35,24 @@
 }
 
 .features__title {
+  margin: 0;
+  line-height: 1.2;
+
+  @include light-font;
+  font-size: 24px;
+  color: $gray;
+
   @media #{$tablet-width} {
     font-size: 40px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 50px;
   }
 }
 
 .features__title:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @media #{$tablet-width} {
     margin-bottom: 0;
@@ -50,7 +61,7 @@
 
 .features__container {
   @include bg-triangle;
-  padding-top: 35px;
+  padding-top: 40px;
 
   @media #{$tablet-width} {
     padding-top: 0;
@@ -63,10 +74,10 @@
   &::after {
     display: block;
     content: "";
-    width: 280px;
+    width: 268px;
     height: 275px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-position: 50% 0;
+    background-position: 60px 0;
     background-repeat: no-repeat;
     background-size: 157px auto;
 
@@ -85,8 +96,9 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 480px;
+      height: 481px;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-position: 50% 0;
       background-repeat: no-repeat;
       background-size: 268px auto;
 
@@ -114,7 +126,7 @@
 
   @media #{$desktop-width} {
     width: 292px;
-    padding: 303px 37px 0 37px;
+    padding: 300px 0 0 0;
     margin-top: -100px;
     margin-bottom: 0;
     background-size: 292px auto;
@@ -146,12 +158,13 @@
 }
 
 .features__item-name {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   color: $black;
+  line-height: 1.2;
 
   @media #{$desktop-width} {
-    margin-bottom: 20px;
-    padding-top: 55px;
+    margin-bottom: 25px;
+    padding: 60px 28px 0 28px;
     line-height: 1;
     font-size: 30px;
   }
@@ -159,10 +172,16 @@
 
 .features__description {
   margin-bottom: 35px;
-  line-height: 1.8;
+  line-height: 1.7;
+
+  &--last {
+    margin-bottom: 40px;
+  }
 
   @media #{$desktop-width} {
-    line-height: 1.5;
+    margin-bottom: 0;
+    padding-left: 24px;
+    padding-right: 24px;
     font-size: 18px;
     background-color: $light-gray;
   }

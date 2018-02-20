@@ -19,3 +19,49 @@
     margin-left: -231px;
   }
 }
+
+.modal-fail__title {
+  margin-top: 50px;
+  margin-bottom: 28px;
+  padding: 0 27px;
+
+  @media #{$tablet-width} {
+    font-size: 30px;
+    padding: 0 116px;
+  }
+}
+
+.modal-fail__text {
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 1.7;
+
+  @media #{$tablet-width} {
+    padding: 0 72px;
+    font-size: 18px;
+  }
+}
+
+.modal-fail__btn {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-transform: uppercase;
+  background-color: $green;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+
+  &:hover {
+    background-color: $dark-green;
+    transition: background-color 0.4s;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    transition: color 0.2s;
+  }
+
+  &:disabled {
+    background-color: $border-gray;
+  }
+}

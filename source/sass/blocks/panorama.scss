@@ -18,21 +18,20 @@
   position: absolute;
   top: 0;
   right: 20px;
-  padding: 10px 20px;
+  padding: 10px 18px 11px 18px;
   text-align: center;
   background-color: $pink;
-  line-height: 1.4;
-
-  @include bold-font;
+  line-height: 1.2;
   font-size: 12px;
   text-transform: uppercase;
   color: $white;
 
   @media #{$tablet-width} {
-    top: 55px;
+    top: 58px;
   }
 
   @media #{$desktop-width} {
+    top: 55px;
     right: 130px;
   }
 }
@@ -40,18 +39,28 @@
 .panorama__comment {
   margin-bottom: 20px;
   background-color: $light-gray;
+  min-height: auto;
 
   @media #{$tablet-width} {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
     margin-bottom: 50px;
   }
+
+  @media #{$desktop-width} {
+    min-height: 95px;
+    padding: 22px 27px;
+  }
 }
 
 .panorama__comment-author {
+  padding-bottom: 1px;
+
   @media #{$tablet-width} {
     order: 1;
+    line-height: 24px;
   }
 }
 
@@ -62,12 +71,13 @@
     order: 3;
     flex-grow: 1;
     margin-bottom: 0;
+    line-height: 24px;
   }
 }
 
 .panorama__comment-like {
   @media #{$tablet-width} {
-    width: 130px;
+    width: 125px;
     order: 2;
   }
 }

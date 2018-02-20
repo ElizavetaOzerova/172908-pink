@@ -7,13 +7,13 @@
     &::before {
       content: "";
       position: absolute;
-      top: 70px;
+      top: 74px;
       left: 50%;
       width: 79px;
       height: 63px;
-      margin-left: -46px;
+      margin-left: -38px;
       background-color: $white;
-      background-image: url('data:image/svg+xml;utf-8,<svg fill="#efefef" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve"><g><path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/></g><g><path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/></g></svg>');
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23efefef' width='78.672' height='63.789'%3E%3Cpath d='M34.967 7.063L30.713 0C28.272 1.495 0 12.207 0 39.617c0 7.231.336 24.172 18.9 24.172 11.187 0 13.94-10.279 13.94-13.584 0-21.977-21.382-14.177-21.382-14.177 0-18.071 19.805-26.844 23.509-28.965zm43.705 0L74.418 0c-2.44 1.495-30.713 12.207-30.713 39.617 0 7.231.337 24.172 18.9 24.172 11.187 0 13.939-10.279 13.939-13.584 0-21.977-21.381-14.177-21.381-14.177.002-18.071 19.806-26.844 23.509-28.965z'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 79px auto;
@@ -23,14 +23,14 @@
 
 .reviews__wrapper {
   @include wrapper;
-  padding: 47px 0;
+  padding: 50px 0 40px 0;
 
   @media #{$tablet-width} {
-    padding: 30px 0 20px 0;
+    padding: 37px 0 14px 0;
   }
 
   @media #{$desktop-width} {
-    padding: 180px 0 0 0;
+    padding: 190px 0 0 0;
   }
 }
 
@@ -61,14 +61,10 @@
 .reviews__item {
   width: 280px;
   min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 5px;
-  padding-right: 5px;
 
   @media #{$tablet-width} {
+    display: flex;
+    align-items: center;
     flex-direction: column-reverse;
     justify-content: space-between;
     min-height: 195px;
@@ -82,7 +78,7 @@
   }
 }
 
-.review-slider__controls {
+.reviews__slider-controls {
   position: absolute;
   width: 100%;
   left: 0;
@@ -92,7 +88,7 @@
 
   @media #{$desktop-width} {
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: -60px;
     display: block;
     width: 940px;
@@ -101,7 +97,7 @@
   }
 }
 
-.review-slider__controls label {
+.reviews__slider-controls label {
   @media #{$desktop-width} {
     display: none;
     position: relative;
@@ -143,6 +139,10 @@
   @media #{$tablet-width} {
     margin-bottom: 55px;
   }
+
+  @media #{$desktop-width} {
+    margin-bottom: 30px;
+  }
 }
 
 .reviews__author {
@@ -160,12 +160,19 @@
 }
 
 .reviews__text {
-  margin-bottom: 35px;
-  line-height: 2;
+  margin-bottom: 53px;
+  line-height: 2.1;
 
   @media #{$tablet-width} {
+    width: 620px;
+    margin-bottom: 40px;
     line-height: 1.7;
     font-size: 18px;
+  }
+
+  @media #{$desktop-width} {
+    width: 700px;
+    margin-bottom: 33px;
   }
 }
 
@@ -184,20 +191,20 @@
 }
 
 @media #{$desktop-width} {
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"],
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"],
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"] {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"],
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"],
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"] {
     display: block;
     background-color: transparent;
     float: left;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]::after,
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]::after,
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]::before {
     content: "";
     position: absolute;
     left: -9px;
@@ -206,70 +213,70 @@
     background-color: $slider-normal;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]::before {
     top: 12px;
     transform: rotate(-45deg);
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]::after {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]::after {
     bottom: 11px;
     transform: rotate(45deg);
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]:hover::after,
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]:hover::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]:hover::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]:hover::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]:hover::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]:hover::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]:hover::after,
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]:hover::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]:hover::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]:hover::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]:hover::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]:hover::before {
     opacity: 1;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]:active::after,
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-3"]:active::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]:active::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-1"]:active::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]:active::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-2"]:active::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]:active::after,
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-3"]:active::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]:active::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-1"]:active::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]:active::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-2"]:active::before {
     opacity: 0.3;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"],
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"],
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"] {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"],
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"],
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"] {
     display: block;
     background-color: transparent;
     float: right;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]:hover::after,
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]:hover::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]:hover::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]:hover::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]:hover::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]:hover::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]:hover::after,
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]:hover::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]:hover::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]:hover::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]:hover::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]:hover::before {
     background-color: $slider-hover;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]:active::after,
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]:active::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]:active::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]:active::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]:active::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]:active::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]:active::after,
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]:active::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]:active::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]:active::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]:active::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]:active::before {
     background-color: $slider-active;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]::after,
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]::after,
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]::before {
     content: "";
     position: absolute;
     right: -9px;
@@ -278,16 +285,16 @@
     background-color: $slider-normal;
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]::before,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]::before,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]::before {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]::before,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]::before,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]::before {
     top: 12px;
     transform: rotate(45deg);
   }
 
-  .reviews__toggle--1:checked ~ .review-slider__controls label[for="toggle-2"]::after,
-  .reviews__toggle--2:checked ~ .review-slider__controls label[for="toggle-3"]::after,
-  .reviews__toggle--3:checked ~ .review-slider__controls label[for="toggle-1"]::after {
+  .reviews__toggle--1:checked ~ .reviews__slider-controls label[for="toggle-2"]::after,
+  .reviews__toggle--2:checked ~ .reviews__slider-controls label[for="toggle-3"]::after,
+  .reviews__toggle--3:checked ~ .reviews__slider-controls label[for="toggle-1"]::after {
     bottom: 11px;
     transform: rotate(-45deg);
   }

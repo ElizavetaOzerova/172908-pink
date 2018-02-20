@@ -142,7 +142,7 @@
         <section class="competition__section competition__achievement">
           <div class="competition__wrapper">
             <fieldset class="competition__fieldset competition__fieldset--achievement">
-              <legend class="competition__form-title">Ваши безбашенные достижения в путешествии</legend>
+              <h4 class="competition__form-title competition__form-title--achievement">Ваши безбашенные достижения в путешествии</h4>
               <ul class="competition__list competition__achievement-list">
                 <li class="competition__achievement-item competition__achievement-item--shark">
                   <label class="competition__achievement-label" for="achievement-1">
@@ -195,7 +195,7 @@
         <section class="competition__section competition__contacts">
           <div class="competition__wrapper">
             <fieldset class="competition__fieldset competition__fieldset--contacts">
-              <legend class="competition__form-title competition__form-title--contacts">Контактная информация</legend>
+              <h4 class="competition__form-title competition__form-title--contacts">Контактная информация</h4>
               <div class="competition__contacts-section">
                 <p class="competition__contacts-text competition__contacts-text--1">
                   <label class="competition__form-label" for="user-phone">Номер телефона</label>
@@ -220,7 +220,7 @@
         <section class="competition__section competition__app">
           <div class="competition__wrapper competition__wrapper--app">
             <fieldset class="competition__fieldset competition__fieldset--app">
-              <legend class="competition__form-title competition__form-title--app">С каким приложением путешествовали?</legend>
+              <h4 class="competition__form-title competition__form-title--app">С каким приложением путешествовали?</h4>
 
               <ul class="competition__list competition__app-list">
                 <li class="competition__app-item">
@@ -246,8 +246,8 @@
 
         <section class="competition__section competition__emotions">
           <div class="competition__wrapper">
-            <fieldset class="competition__fieldset">
-              <legend class="competition__form-title competition__form-title--textarea">Опишите свои эмоции</legend>
+            <fieldset class="competition__fieldset competition__fieldset--emotions">
+              <h4 class="competition__form-title competition__form-title--textarea">Опишите свои эмоции</h4>
               <textarea class="competition__textarea" id="user-emotions" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
@@ -260,7 +260,7 @@
               <input class="competition__submit-input btn" type="submit" value="Отправить форму">
               <p class="competition__form-remark">
                 <span class="competition__star">* </span> &mdash; Обязательные
-                <span class="competition__form-remark--desktop">для заполнения</span> поля
+                <span class="competition__form-remark-desktop">для заполнения</span> поля
               </p>
             </div>
           </div>
@@ -365,10 +365,10 @@
   </div>
 
   <div class="modal-fail" id="modal-fail">
-    <h3 class="modal__title">Что-то пошло не так!</h3>
-    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <h3 class="modal-fail__title">Что-то пошло не так!</h3>
+    <p class="modal-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
 
-    <button class="modal__btn btn" id="modal-fail__btn" type="button">Ok</button>
+    <button class="modal-fail__btn btn" id="modal-fail__btn" type="button">Ok</button>
   </div>
 
   <script src="js/main-menu.js"></script>

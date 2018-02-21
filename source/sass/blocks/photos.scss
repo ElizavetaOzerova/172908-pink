@@ -11,15 +11,21 @@
   margin: 0;
   line-height: 2.2;
   text-align: center;
+  height: 184px;
+  box-sizing: border-box;
 
   &--bottom {
     padding: 20px 12px 42px 12px;
+    box-sizing: content-box;
+    height: auto;
   }
 
   @media #{$tablet-width} {
     padding: 90px 85px 77px 85px;
     font-size: 18px;
     line-height: 30px;
+    box-sizing: content-box;
+    height: auto;
 
     &--bottom {
       padding: 45px 85px 68px 85px;
@@ -56,10 +62,58 @@
   text-align: left;
   background-color: $light-gray;
 
+  &:nth-of-type(1) {
+    height: 324px;
+  }
+
+  &:nth-of-type(2) {
+    height: 301px;
+  }
+
+  &:nth-of-type(3) {
+    height: 324px;
+  }
+
+  &:nth-of-type(4) {
+    height: 301px;
+  }
+
+  &:nth-of-type(5) {
+    height: 301px;
+  }
+
+  &:nth-of-type(6) {
+    height: 301px;
+  }
+
   @media #{$tablet-width} {
     width: 300px;
     margin-left: 0;
     margin-right: 0;
+
+    &:nth-of-type(1) {
+      height: auto;
+    }
+
+    &:nth-of-type(2) {
+      height: auto;
+    }
+
+    &:nth-of-type(3) {
+      height: auto;
+    }
+
+    &:nth-of-type(4) {
+      height: auto;
+    }
+
+    &:nth-of-type(5) {
+      height: auto;
+    }
+
+    &:nth-of-type(6) {
+      height: auto;
+    }
   }
 
   @media #{$desktop-width} {

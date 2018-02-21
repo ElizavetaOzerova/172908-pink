@@ -22,6 +22,8 @@
   @media #{$tablet-width} {
     padding: 180px 0 138px 0;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px auto;
+    background-position: center 0;
 
     &--form {
       padding: 180px 0 78px 0;
@@ -35,6 +37,8 @@
   @media #{$desktop-width} {
     padding: 175px 0 100px 0;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    background-size: auto;
 
     &--form {
       padding: 175px 0 100px 0;
